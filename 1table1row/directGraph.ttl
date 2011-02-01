@@ -1,1 +1,3 @@
-# empty graph
+@prefix ex: <http://example.com/> .
+
+ _:b1 ex:name "Venus".
