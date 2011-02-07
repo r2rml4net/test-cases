@@ -1,3 +1,2 @@
-@prefix ex: <http://example.com/> .
-
- _:b1 ex:name "Venus".
+_:a <Student#Name> "Venus".
+_:a a <Student> .
