@@ -2,9 +2,10 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ex: <http://example.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base: <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
-<#TriplesMap1>
-    a rr:TriplesMap;
+<TriplesMap1>
+    a rr:TriplesMapClass;
     
     rr:tableOwner "boricles";
     rr:tableName "Student";
