@@ -9,7 +9,7 @@
     
     rr:logicalTable [ rr:tableName "boricles.Student" ];
 
-    rr:subjectMap [ rr:column "Name"; rr:termType "BlankNode" ]; 
+    rr:subjectMap [ rr:column "Name"; rr:termType rr:BlankNode ]; 
 	
     rr:predicateObjectMap
     [ 
