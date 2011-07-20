@@ -5,16 +5,18 @@
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
 <TriplesMap1>
-     a rr:TriplesMapClass;
+     a rr:TriplesMap;
     
-    rr:SQLQuery """
-       Select ('Student' || ID ) AS "StudentId"
-            , ID
-            , Name
-         from Student
-       """;
+    rr:logicalTable [ 
+                     rr:sqlQuery """
+                       Select ('Student' || ID ) AS "StudentId"
+                            , ID
+                            , Name
+                         from Student
+                       """
+                       ];
 
-    rr:subjectMap [ rr:column "StudentId"; rr:termtype "BlankNode"; rr:class foaf:Person ];
+    rr:subjectMap [ rr:column "StudentId"; rr:termType "BlankNode"; rr:class foaf:Person ];
 
     rr:predicateObjectMap
     [ 

@@ -5,15 +5,17 @@
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
 <TriplesMap1>
-     a rr:TriplesMapClass;
+     a rr:TriplesMap;
 
-      rr:SQLQuery """
-      SELECT ID,
-             (FirstName || ' ' || LastName) AS Name,
-             FirstName,
-             LastName
-      FROM Student
-      """;
+     rr:logicalTable [ 
+                     rr:sqlQuery """
+                     SELECT ID,
+                            (FirstName || ' ' || LastName) AS Name,
+                            FirstName,
+                            LastName
+                     FROM Student
+                     """
+                     ];
 
     rr:subjectMap [ rr:template "http://example.com/Student{ID}{FirstName}{LastName}"; 
                     rr:class foaf:Person ];
