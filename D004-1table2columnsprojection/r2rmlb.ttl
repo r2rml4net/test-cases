@@ -5,14 +5,15 @@
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
 <TriplesMap1>
-    a rr:TriplesMapClass;
+    a rr:TriplesMap;
 
-      rr:SQLQuery """
+      rr:logicalTable [ rr:SQLQuery """
        Select ('Student' || Student) AS StudentId
          from Student_Sport
        """;
+	   ] ;
 
-    rr:subjectMap [ rr:column "StudentId"; rr:termtype "BlankNode";
+    rr:subjectMap [ rr:column "StudentId"; rr:termtype rr:BlankNode;
                     rr:class ex:Student ];
 	
     rr:predicateObjectMap
@@ -23,14 +24,14 @@
     .
 
 <TriplesMap2>
-    a rr:TriplesMapClass;
+    a rr:TriplesMap;
 
       rr:SQLQuery """
        Select ('Sport' || Sport) AS SportId
          from Student_Sport
        """;
 
-    rr:subjectMap [ rr:column "SportId"; rr:termtype "BlankNode";
+    rr:subjectMap [ rr:column "SportId"; rr:termtype rr:BlankNode;
                     rr:class ex:Sport  ];
 	
     rr:predicateObjectMap

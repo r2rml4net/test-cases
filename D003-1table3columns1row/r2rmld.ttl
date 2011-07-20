@@ -16,7 +16,7 @@
                      """
                      ];
 
-    rr:subjectMap [ rr:column "StudentID"; rr:termType "BlankNode";
+    rr:subjectMap [ rr:column "StudentID"; rr:termType rr:BlankNode;
                     rr:class foaf:Person  ];
 	
     rr:predicateObjectMap
