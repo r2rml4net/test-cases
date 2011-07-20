@@ -3,6 +3,6 @@
 @prefix ex: <http://example.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:Student10VenusWilliams rdf:type foaf:Person
+_:Student10VenusWilliams rdf:type foaf:Person;
                          ex:id "10"^^xsd:integer;
                          foaf:name "Venus Williams". 
