@@ -1,6 +1,7 @@
 @prefix test: <http://www.w3.org/2006/03/test-description#> .
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 @base <http://mappingpedia.org/rdb2rdf/tc/> .
 
 <d012> a rdb2rdftest:DataBase;
@@ -9,6 +10,8 @@
 	rdb2rdftest:sqlScriptFile "create.sql";
 	rdb2rdftest:relatedTestCase <tc0012a> ;
 	rdb2rdftest:relatedTestCase <tc0012b> ;
+	rdb2rdftest:relatedTestCase <tc0012c> ;	
+	rdb2rdftest:relatedTestCase <tc0012d> ;		
 .
 
 <tc0012a> a rdb2rdftest:R2RML ;	
@@ -18,6 +21,7 @@
 	test:specificationReference "#dfn-output-dataset" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
+	rdb2rdftest:hasExpectedOutput "true"^^xsd:boolean ;		
 	rdb2rdftest:output "mappeda.nq" ;
 	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
 .
@@ -29,8 +33,29 @@
 	test:specificationReference "#dfn-output-dataset" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
-	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:hasExpectedOutput "true"^^xsd:boolean ;	
+	rdb2rdftest:output "mappedb.nq" ;
 	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;
 .
 
+<tc0012c> a rdb2rdftest:R2RML ;	
+	dcterms:title "TriplesMap without subjectMap" ; 
+	dcterms:identifier "R2RMLTC012c" ;
+	test:purpose "Tests a R2RML with missing information, TriplesMap without subjectMap." ;
+	test:specificationReference "#dfn-output-dataset" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d012> ;
+	rdb2rdftest:hasExpectedOutput "false"^^xsd:boolean ;
+	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
+.
 
+<tc0012d> a rdb2rdftest:R2RML ;	
+	dcterms:title "TriplesMap with two subjectMap" ; 
+	dcterms:identifier "R2RMLTC012d" ;
+	test:purpose "Tests a R2RML with wrong information, TriplesMap with two subjectMap." ;
+	test:specificationReference "#dfn-output-dataset" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d012> ;
+	rdb2rdftest:hasExpectedOutput "false"^^xsd:boolean ;
+	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
+.
