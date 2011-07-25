@@ -17,5 +17,6 @@
 	test:specificationReference "#rules_table_triples" ;
 	test:reviewStatus test:accepted ;
 	rdb2rdftest:database <d010> ;
+	rdb2rdftest:hasExpectedOutput true ;	
 	rdb2rdftest:output "directGraph.nt" ;
 .
