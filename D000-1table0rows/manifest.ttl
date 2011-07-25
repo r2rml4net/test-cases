@@ -17,6 +17,7 @@
 	test:purpose "Tests if an empty table produces an empty RDF graph" ;
 	test:specificationReference "#rules_table_triples" ;
 	test:reviewStatus test:accepted ;
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:database <d000> ;
 	rdb2rdftest:output "directGraph.nt" ;
 .
@@ -27,6 +28,7 @@
 	test:purpose "Tests if an empty table produces an empty RDF graph" ;
 	test:specificationReference "#dfn-output-dataset" ;
 	test:reviewStatus test:accepted ;
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:database <d000> ;
 	rdb2rdftest:output "mapped.nq" ;
 	rdb2rdftest:mappingDocument "r2rml.ttl" ;

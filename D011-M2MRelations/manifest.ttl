@@ -18,6 +18,7 @@
 	test:specificationReference "#rules_table_triples" ;
 	test:reviewStatus test:accepted ;
 	rdb2rdftest:database <d011> ;
+	rdb2rdftest:hasExpectedOutput true ;	
 	rdb2rdftest:output "directGraph.nt" ;
 .
 
@@ -29,5 +30,6 @@
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d011> ;
 	rdb2rdftest:output "mapped.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:mappingDocument "r2rml.ttl" ;
 .

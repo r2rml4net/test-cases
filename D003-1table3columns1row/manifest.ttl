@@ -21,6 +21,7 @@
 	test:specificationReference "#rules_table_triples" ;
 	test:reviewStatus test:accepted ;
 	rdb2rdftest:database <d003> ;
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "directGraph.nt" ;
 .
 
@@ -32,6 +33,7 @@
 	test:reviewStatus test:accepted ;
 	rdb2rdftest:database <d003> ;
 	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
 .
 
@@ -43,6 +45,7 @@
 	test:reviewStatus test:accepted ;
 	rdb2rdftest:database <d003> ;
 	rdb2rdftest:output "mappedb.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;
 .
 
@@ -54,6 +57,7 @@
 	test:reviewStatus test:accepted ;
 	rdb2rdftest:database <d003> ;
 	rdb2rdftest:output "mappedc.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
 .
 
@@ -65,5 +69,6 @@
 	test:reviewStatus test:accepted ;
 	rdb2rdftest:database <d003> ;
 	rdb2rdftest:output "mappedd.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
 .

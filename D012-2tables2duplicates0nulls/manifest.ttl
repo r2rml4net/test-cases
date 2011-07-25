@@ -21,7 +21,7 @@
 	test:specificationReference "#dfn-output-dataset" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
-	rdb2rdftest:hasExpectedOutput "true"^^xsd:boolean ;		
+	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "mappeda.nq" ;
 	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
 .
@@ -33,7 +33,7 @@
 	test:specificationReference "#dfn-output-dataset" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
-	rdb2rdftest:hasExpectedOutput "true"^^xsd:boolean ;	
+	rdb2rdftest:hasExpectedOutput true ;	
 	rdb2rdftest:output "mappedb.nq" ;
 	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;
 .
@@ -45,7 +45,7 @@
 	test:specificationReference "#dfn-output-dataset" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
-	rdb2rdftest:hasExpectedOutput "false"^^xsd:boolean ;
+	rdb2rdftest:hasExpectedOutput false ;
 	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
 .
 
@@ -56,6 +56,6 @@
 	test:specificationReference "#dfn-output-dataset" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
-	rdb2rdftest:hasExpectedOutput "false"^^xsd:boolean ;
+	rdb2rdftest:hasExpectedOutput false ;
 	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
 .
