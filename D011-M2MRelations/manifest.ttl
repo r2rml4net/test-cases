@@ -8,7 +8,8 @@
 	dcterms:identifier "D011-M2MRelations" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
 	rdb2rdftest:relatedTestCase <dg0011> ;
-	rdb2rdftest:relatedTestCase <tc0011> ;	
+	rdb2rdftest:relatedTestCase <tc0011a> ;	
+	rdb2rdftest:relatedTestCase <tc0011b> ;		
 .
 
 <dg0011> a rdb2rdftest:DirectMapping ;	
@@ -22,14 +23,26 @@
 	rdb2rdftest:output "directGraph.nt" ;
 .
 
-<tc0011> a rdb2rdftest:R2RML ;	
-	dcterms:title "M to N relation" ; 
-	dcterms:identifier "R2RMLTC011" ;
-	test:purpose "Tests, M to N relations." ;
+<tc0011a> a rdb2rdftest:R2RML ;	
+	dcterms:title "M to N relation, by using a SQL query" ; 
+	dcterms:identifier "R2RMLTC011a" ;
+	test:purpose "Tests, M to N relations, by using a SQL query" ;
 	test:specificationReference "#dfn-output-dataset" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d011> ;
-	rdb2rdftest:output "mapped.nq" ;
+	rdb2rdftest:output "mappeda.nq" ;
 	rdb2rdftest:hasExpectedOutput true ;
-	rdb2rdftest:mappingDocument "r2rml.ttl" ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+.
+
+<tc0011b> a rdb2rdftest:R2RML ;	
+	dcterms:title "M to N relation, by using an additional Triples Map" ; 
+	dcterms:identifier "R2RMLTC011b" ;
+	test:purpose "Tests, M to N relations, by using an additional Triples Map" ;
+	test:specificationReference "#dfn-output-dataset" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d011> ;
+	rdb2rdftest:output "mappedb.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;
 .
