@@ -50,7 +50,10 @@
 
 	rr:logicalTable [ rr:tableName  "Sport" ];
 	
-    rr:subjectMap [ rr:template "http://example.com/{ID}{Description}" ];
+    rr:subjectMap [ 
+		rr:template "http://example.com/{ID}{Description}"; 
+		rr:class ex:Sport; 
+	];
 
     rr:predicateObjectMap
     [ 
