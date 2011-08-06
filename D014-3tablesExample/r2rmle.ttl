@@ -10,9 +10,9 @@
 <TriplesMap3>
     a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
-      Select ('http://example.com/emp/' || "id") AS "empId"
-           , ('http://example.com/emp/likes/' || "likeType") AS "empLikes"
-           , "likedObj"
+      Select ('http://example.com/emp/' || id) AS empId
+           , ('http://example.com/emp/likes/' || likeType) AS empLikes
+           , likedObj
         from SCOTT.LIKES
       """ ];
 

@@ -12,7 +12,7 @@ PRIMARY KEY (ID),
 FOREIGN KEY(Sport) REFERENCES Sport(ID)
 );
 
-INSERT INTO Sport (ID, Name) VALUES (100,"Tennis");
-INSERT INTO Student (ID, Name, Sport) VALUES (10,"Venus Williams", 100);
-INSERT INTO Student (ID, Name, Sport) VALUES (20,"Demi Moore", NULL);
+INSERT INTO Sport (ID, Name) VALUES (100,'Tennis');
+INSERT INTO Student (ID, Name, Sport) VALUES (10,'Venus Williams', 100);
+INSERT INTO Student (ID, Name, Sport) VALUES (20,'Demi Moore', NULL);
 
