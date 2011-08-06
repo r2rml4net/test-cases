@@ -20,7 +20,7 @@
 	test:reviewStatus test:accepted ;
 	rdb2rdftest:database <d002> ;
 	rdb2rdftest:hasExpectedOutput true ;	
-	rdb2rdftest:output "directGraph.n3" ;
+	rdb2rdftest:output "directGraph.nt" ;
 .
 
 <tc0002a> a rdb2rdftest:R2RML ;	
