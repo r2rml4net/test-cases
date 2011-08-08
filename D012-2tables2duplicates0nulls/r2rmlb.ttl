@@ -11,7 +11,7 @@
 	
     rr:subjectMap [
             rr:template "{fname}_{lname}"; 
-            rr:termtype rr:BlankNode ;
+            rr:termType rr:BlankNode ;
             rr:class ex:IOU; 
       ];
 	
@@ -20,7 +20,7 @@
       rr:predicateMap [ rr:predicate foaf:name ]; 
       rr:objectMap    [ 
             rr:template "{fname} {lname}";
-            rr:termtype rr:Literal ;
+            rr:termType rr:Literal ;
       ]
     ];
     .
@@ -31,8 +31,8 @@
 
     rr:subjectMap [
             rr:template "{fname}_{lname}"; 
-            rr:termtype rr:BlankNode;
-            rr:class ex:IOU; 
+            rr:termType rr:BlankNode;
+            rr:class ex:Lives; 
       ];
 	
     rr:predicateObjectMap
@@ -40,7 +40,7 @@
       rr:predicateMap [ rr:predicate ex:city ]; 
       rr:objectMap    [ 
             rr:column "city";
-            rr:termtype rr:Literal ; 
+            rr:termType rr:Literal ; 
       ]
     ];
 	.

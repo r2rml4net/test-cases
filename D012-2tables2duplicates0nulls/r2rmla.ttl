@@ -11,7 +11,7 @@
 	
     rr:subjectMap [
             rr:template "{fname}_{lname}_{amount}"; 
-            rr:termtype rr:BlankNode;
+            rr:termType rr:BlankNode;
             rr:class ex:IOU; 
       ];
 	
@@ -20,7 +20,7 @@
       rr:predicateMap [ rr:predicate foaf:name ]; 
       rr:objectMap    [ 
             rr:template "{fname} {lname}";
-            rr:termtype rr:Literal ;
+            rr:termType rr:Literal ;
       ]
     ];
     
@@ -29,7 +29,7 @@
       rr:predicateMap [ rr:predicate ex:amount ]; 
       rr:objectMap    [ 
             rr:column "amount";
-            rr:termtype rr:Literal ;
+            rr:termType rr:Literal ;
             rr:datatype xsd:float ;
       ]
     ];
