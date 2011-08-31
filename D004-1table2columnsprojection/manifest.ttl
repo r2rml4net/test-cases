@@ -7,9 +7,7 @@
 	dcterms:title "One table, two columns, projection" ;
 	dcterms:identifier "D004-1table2columnsprojection" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0004> ;
-	rdb2rdftest:relatedTestCase <tc0004a> ;
-	rdb2rdftest:relatedTestCase <tc0004b> ;
+	rdb2rdftest:relatedTestCase <dg0004>, <tc0004a>, <tc0004b>  ;
 .
 
 <dg0004> a rdb2rdftest:DirectMapping ;	

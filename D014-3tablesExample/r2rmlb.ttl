@@ -60,7 +60,7 @@
             , ('http://example.com/emp/etype/'|| etype) AS empTypeURI
             , etype
             , ('http://example.com/graph/'|| job || '/' || etype) AS graphURI
-       from EMP
+       from SCOTT.EMP
        """ ];
 
     rr:subjectMap [ rr:column "empURI";

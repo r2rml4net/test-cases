@@ -5,7 +5,6 @@ CREATE TABLE IOUs (
 INSERT INTO IOUs (fname, lname, amount) VALUES ('Bob', 'Smith', 30);
 INSERT INTO IOUs (fname, lname, amount) VALUES ('Sue', 'Jones', 20);
 INSERT INTO IOUs (fname, lname, amount) VALUES ('Bob', 'Smith', 30);
-
 CREATE TABLE Lives (
       fname CHAR(20),
       lname CHAR(20),
