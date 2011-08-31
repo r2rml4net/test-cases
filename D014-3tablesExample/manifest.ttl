@@ -8,11 +8,7 @@
 	dcterms:title "3 tables extended example" ;
 	dcterms:identifier "D014-3tablesExample" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <tc0014a> ;
-	rdb2rdftest:relatedTestCase <tc0014b> ;
-	rdb2rdftest:relatedTestCase <tc0014c> ;	
-	rdb2rdftest:relatedTestCase <tc0014d> ;
-	rdb2rdftest:relatedTestCase <tc0014e> ;	
+	rdb2rdftest:relatedTestCase <tc0014a>, <tc0014b>, <tc0014c>, <tc0014d>, <tc0014e> ;
 .
 
 <tc0014a> a rdb2rdftest:R2RML ;	

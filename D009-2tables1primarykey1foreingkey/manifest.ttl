@@ -7,8 +7,7 @@
 	dcterms:title "Two tables 1 primary key 1 foreing key" ;
 	dcterms:identifier "D009-2tables1primarykey1foreingkey" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0009> ;
-	rdb2rdftest:relatedTestCase <tc0009> ;
+	rdb2rdftest:relatedTestCase <dg0009>, <tc0009>;
 .
 
 <dg0009> a rdb2rdftest:DirectMapping ;	

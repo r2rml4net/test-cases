@@ -8,10 +8,7 @@
 	dcterms:title "Two tables two duplicates zero nulls" ;
 	dcterms:identifier "D012-2tables2duplicates0nulls" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <tc0012a> ;
-	rdb2rdftest:relatedTestCase <tc0012b> ;
-	rdb2rdftest:relatedTestCase <tc0012c> ;	
-	rdb2rdftest:relatedTestCase <tc0012d> ;		
+	rdb2rdftest:relatedTestCase <tc0012a>, <tc0012b>, <tc0012c>, <tc0012d> ;
 .
 
 <tc0012a> a rdb2rdftest:R2RML ;	

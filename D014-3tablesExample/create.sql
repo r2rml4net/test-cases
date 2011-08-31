@@ -18,4 +18,3 @@ CREATE TABLE LIKES (
       likedObj VARCHAR(100));
 INSERT INTO LIKES (id, likeType, likedObj) VALUES (7369, 'Playing', 'Soccer');
 INSERT INTO LIKES (id, likeType, likedObj) VALUES (7369, 'Watching', 'Basketball');
-
