@@ -5,7 +5,7 @@
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
 <TriplesMap1>
-    rr:logicalTable [ rr:tableName "Student"; ]
+    rr:logicalTable [ rr:tableName "Student"; ] ;
     rr:subjectMap [
         rr:template "http://example.com/student/{ID}";
         rr:class ex:Student;
@@ -24,7 +24,7 @@
 	.	
     
 <TriplesMap2>
-    rr:logicalTable [ rr:tableName "Sport"; ]
+    rr:logicalTable [ rr:tableName "Sport"; ] ;
     rr:subjectMap [
         rr:template "http://example.com/sport/{ID}";
         rr:class ex:Sport;
