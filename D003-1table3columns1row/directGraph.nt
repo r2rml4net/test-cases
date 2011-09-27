@@ -1,4 +1,4 @@
 _:a a <Student> .
-_:a <Student#ID> 10 .
+_:a <Student#ID> "10"<http://www.w3.org/2001/XMLSchema#integer> .
 _:a <Student#FirstName> "Venus" .
 _:a <Student#LastName> "Williams" .
