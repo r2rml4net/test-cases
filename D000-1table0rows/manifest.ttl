@@ -15,7 +15,7 @@
 	dcterms:identifier "Direct Graph TC0000" ;
 	test:purpose "Tests if an empty table produces an empty RDF graph" ;
 	test:specificationReference "#rules_table_triples" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:database <d000> ;
 	rdb2rdftest:output "directGraph.nt" ;
@@ -26,7 +26,7 @@
 	dcterms:identifier "R2RMLTC000" ;
 	test:purpose "Tests if an empty table produces an empty RDF graph" ;
 	test:specificationReference "#physical-tables" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:database <d000> ;
 	rdb2rdftest:output "mapped.nq" ;

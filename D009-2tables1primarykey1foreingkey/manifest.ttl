@@ -15,7 +15,7 @@
 	dcterms:identifier "Direct Graph TC0009" ;
 	test:purpose "Tests two tables with a primary key and a foreing key" ;
 	test:specificationReference "#rules_table_triples" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d009> ;
 	rdb2rdftest:hasExpectedOutput true ;	
 	rdb2rdftest:output "directGraph.nt" ;

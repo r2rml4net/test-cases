@@ -15,7 +15,7 @@
 	dcterms:identifier "Direct Graph TC0001" ;
 	test:purpose "Tests: (1) one column mapping, no primary key; (2) generation of a \"BlankNode\" subject; (3) one column to one property" ;
 	test:specificationReference "#rules_table_triples" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d001> ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "directGraph.nt" ;
@@ -26,7 +26,7 @@
 	dcterms:identifier "R2RMLTC0001a" ;
 	test:purpose "Tests: (1) one column mapping, no primary key; (2) subject URI generation by using one single column; (3) one column to one property" ;
 	test:specificationReference "#dfn-template-valued-term-map" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d001> ;
 	rdb2rdftest:output "mappeda.nq" ;
 	rdb2rdftest:hasExpectedOutput true ;
@@ -38,7 +38,7 @@
 	dcterms:identifier "R2RMLTC0001b" ;
 	test:purpose "Tests: (1) one column mapping, no primary key; (2) generation of a \"BlankNode\" subject; (3) one column to one property" ;
 	test:specificationReference "#termtype" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d001> ;
 	rdb2rdftest:output "mappedb.nq" ;
 	rdb2rdftest:hasExpectedOutput true ;

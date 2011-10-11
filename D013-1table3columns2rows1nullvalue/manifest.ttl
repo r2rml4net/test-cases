@@ -15,7 +15,7 @@
 	dcterms:identifier "Direct Graph TC0013" ;
 	test:purpose "Tests Direct Graph of table with NULL values" ;
 	test:specificationReference "#rules_table_triples" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d013> ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "directGraph.nt" ;
