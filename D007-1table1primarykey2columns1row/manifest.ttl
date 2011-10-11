@@ -1,0 +1,70 @@
+@prefix test: <http://www.w3.org/2006/03/test-description#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
+@base <http://mappingpedia.org/rdb2rdf/tc/> .
+
+<d007> a rdb2rdftest:DataBase;
+	dcterms:title "One table, one column, one primary key" ;
+	dcterms:identifier "D007-1table1primarykey2columns1row" ;
+	rdb2rdftest:sqlScriptFile "create.sql";
+	rdb2rdftest:relatedTestCase <dg0007>, <tc0007a>, <tc0007b>, <tc0007c>, <tc0007d> ;
+.
+
+<dg0007> a rdb2rdftest:DirectMapping ;	
+	dcterms:title "A table with a primary key and 2 columns"; 
+	dcterms:identifier "Direct Graph TC0007" ;
+	test:purpose "Tests a table with a primary key and 2 columns" ;
+	test:specificationReference "#rules_table_triples" ;
+	test:reviewStatus test:accepted ;
+	rdb2rdftest:database <d007> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "directGraph.nt" ;
+.
+
+<tc0007a> a rdb2rdftest:R2RML ;	
+	dcterms:title "One column mapping" ; 
+	dcterms:identifier "R2RMLTC0007a" ;
+	test:purpose "Tests constant-value term map by using rr:constant property" ;
+	test:specificationReference "#termtype" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d007> ;
+	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+.
+
+<tc0007b> a rdb2rdftest:R2RML ;	
+	dcterms:title "One column mapping" ; 
+	dcterms:identifier "R2RMLTC0007b" ;
+	test:purpose "Tests constant-value term map by using constant shortcut properties rr:predicate, rr:object and rr:graph. Also directly using rr:tableName" ;
+	test:specificationReference "#termtype" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d007> ;
+	rdb2rdftest:output "mappedb.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;
+.
+
+<tc0007c> a rdb2rdftest:R2RML ;	
+	dcterms:title "One column mapping" ; 
+	dcterms:identifier "R2RMLTC0007c" ;
+	test:purpose "Tests subjectmap with more than one class IRIs, rr:class" ;
+	test:specificationReference "#termtype" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d007> ;
+	rdb2rdftest:output "mappedc.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
+.
+
+<tc0007d> a rdb2rdftest:R2RML ;	
+	dcterms:title "One column mapping" ; 
+	dcterms:identifier "R2RMLTC0007d" ;
+	test:purpose "Tests subjectmap with an alternative of having rr:class, i.e., by specifying an rr:predicateObjectMap with predicate rdf:type" ;
+	test:specificationReference "#termtype" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d007> ;
+	rdb2rdftest:output "mappedd.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
+.

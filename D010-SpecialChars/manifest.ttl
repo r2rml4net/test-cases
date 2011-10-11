@@ -1,0 +1,47 @@
+@prefix test: <http://www.w3.org/2006/03/test-description#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
+@base <http://mappingpedia.org/rdb2rdf/tc/> .
+
+<d010> a rdb2rdftest:DataBase;
+	dcterms:title "Table with Special Chars" ;
+	dcterms:identifier "D010-SpecialChars" ;
+	rdb2rdftest:sqlScriptFile "create.sql";
+	rdb2rdftest:relatedTestCase <tc0010a>, <tc0010b>, <tc0010c>  ;
+.
+
+<tc0010a> a rdb2rdftest:R2RML ;	
+	dcterms:title "Table with Special Chars" ; 
+	dcterms:identifier "R2RMLTC010a" ;
+	test:purpose "Tests a template with blank space in column" ;
+	test:specificationReference "#dfn-template-valued-term-map" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d010> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+.
+
+<tc0010b> a rdb2rdftest:R2RML ;	
+	dcterms:title "Table with Special Chars" ; 
+	dcterms:identifier "R2RMLTC010b" ;
+	test:purpose "Tests a template with special chars in column value" ;
+	test:specificationReference "#dfn-template-valued-term-map" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d010> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappedb.nq" ;
+	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;
+.
+
+<tc0010c> a rdb2rdftest:R2RML ;	
+	dcterms:title "Table with Special Chars" ; 
+	dcterms:identifier "R2RMLTC010c" ;
+	test:purpose "Tests a template with special chars in column value and backslash escapes in string templates" ;
+	test:specificationReference "#dfn-template-valued-term-map" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d010> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappedc.nq" ;
+	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
+.
