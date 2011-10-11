@@ -15,7 +15,7 @@
 	dcterms:identifier "Direct Graph TC0006" ;
 	test:purpose "Tests a table with a column that is a primary key" ;
 	test:specificationReference "#rules_table_triples" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d006> ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "directGraph.nt" ;

@@ -15,7 +15,7 @@
 	dcterms:identifier "Direct Graph TC0004" ;
 	test:purpose "Tests: (1) two column mapping, no primary key, (2) generation of a \"BlankNode\" subject; (3) one row table to two different resources" ;
 	test:specificationReference "#rules_table_triples" ;
-	test:reviewStatus test:accepted ;
+	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d004> ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "directGraph.nt" ;
