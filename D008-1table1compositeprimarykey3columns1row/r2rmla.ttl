@@ -7,16 +7,18 @@
 
 
 <TriplesMap1>
-    a rr:TriplesMap;
+     a rr:TriplesMap;
 
-	rr:logicalTable [ rr:tableName "Patient" ];
+	rr:logicalTable [ rr:tableName "Student" ];
 
-    rr:subjectMap [ rr:template "http://example.com/Patient{ID}"; ];
+    rr:subjectMap [ rr:template "http://example.com/Student{ID}{Name}"; 
+					rr:graphMap [ rr:template "http://example.com/graph/Student{ID}{Name}"; ]
+	];
 	
     rr:predicateObjectMap
     [ 
-		rr:predicate rdf:type;
-		rr:object foaf:Person;
+		rr:predicateMap [ rr:constant rdf:type; ];
+		rr:objectMap [ rr:constant foaf:Person; ]
 	];
 	
     rr:predicateObjectMap
@@ -27,20 +29,14 @@
 
     rr:predicateObjectMap
     [ 
-      rr:predicate	foaf:firstName;
-      rr:objectMap    [ rr:column "FirstName"; rr:datatype xsd:string ]
+      rr:predicateMap [ rr:constant foaf:name; ];
+      rr:objectMap    [ rr:column "Name" ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicate foaf:lastName;
-      rr:objectMap    [ rr:column "LastName"; rr:datatype xsd:string ]
-    ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicate foaf:gender;
-      rr:objectMap    [ rr:column "Sex"; rr:datatype xsd:string ]
-    ];
-
+      rr:predicateMap [ rr:constant ex:Sport; ];
+      rr:objectMap    [ rr:column "Sport" ]
+    ]
+	
     .

@@ -17,7 +17,7 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate foaf:name ]; 
+      rr:predicateMap [ rr:constant foaf:name ]; 
       rr:objectMap    [ 
             rr:template "{fname} {lname}";
             rr:termType rr:Literal ;
@@ -37,7 +37,7 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate ex:city ]; 
+      rr:predicateMap [ rr:constant ex:city ]; 
       rr:objectMap    [ 
             rr:column "city";
             rr:termType rr:Literal ; 

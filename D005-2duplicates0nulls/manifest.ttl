@@ -7,7 +7,7 @@
 	dcterms:title "Duplicate tuples, no primary key" ;
 	dcterms:identifier "D005-2duplicates0nulls" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0005> ;
+	rdb2rdftest:relatedTestCase <dg0005>, <tc0005a> ;
 .
 
 <dg0005> a rdb2rdftest:DirectMapping ;	
@@ -20,3 +20,16 @@
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "directGraph.nt" ;
 .
+
+<tc0005a> a rdb2rdftest:R2RML ;	
+	dcterms:title "Duplicate tuples, no primary key" ; 
+	dcterms:identifier "R2RMLTC0005a" ;
+	test:purpose "Tests the generation of duplicate triples and the typing of resources" ;
+	test:specificationReference "#typing" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d005> ;
+	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+.
+

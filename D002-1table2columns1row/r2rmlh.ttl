@@ -12,7 +12,7 @@
                        Select ('Student' || ID ) AS StudentId
                             , "ID"
                             , "Name"
-			, "ID"
+					, "ID"
                        from "boricles.Student"
                        """
                        ];
@@ -21,13 +21,13 @@
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate ex:id ]; 
+      rr:predicateMap [ rr:constant ex:id ]; 
       rr:objectMap    [ rr:column "ID"; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate foaf:name ]; 
+      rr:predicateMap [ rr:constant foaf:name ]; 
       rr:objectMap    [ rr:column "Name" ]
     ]
     .

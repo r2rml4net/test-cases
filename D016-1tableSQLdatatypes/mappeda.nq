@@ -3,29 +3,14 @@
 <http://example.com/Patient10> <http://xmlns.com/foaf/0.1/firstName> "Monica"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://example.com/Patient10> <http://xmlns.com/foaf/0.1/lastName> "Geller"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://example.com/Patient10> <http://xmlns.com/foaf/0.1/gender> "female"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://example.com/Patient10> <http://example.com/weight> "80.25"^^<http://www.w3.org/2001/XMLSchema#real> .
-<http://example.com/Patient10> <http://example.com/height> "1.65"^^<http://www.w3.org/2001/XMLSchema#float> .
-<http://example.com/Patient10> <http://example.com/birthdate> "1981-10-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.com/Patient10> <http://example.com/entrancedate> "2009-10-10 12:12:22"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://example.com/Patient10> <http://example.com/paid> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://example.com/Patient11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://example.com/Patient11> <http://example.com/id> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://example.com/Patient11> <http://xmlns.com/foaf/0.1/firstName> "Rachel"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://example.com/Patient11> <http://xmlns.com/foaf/0.1/lastName> "Green"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://example.com/Patient11> <http://xmlns.com/foaf/0.1/gender> "female"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://example.com/Patient11> <http://example.com/weight> "70.22"^^<http://www.w3.org/2001/XMLSchema#real> .
-<http://example.com/Patient11> <http://example.com/height> "1.70"^^<http://www.w3.org/2001/XMLSchema#float> .
-<http://example.com/Patient11> <http://example.com/birthdate> "1982-11-12"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.com/Patient11> <http://example.com/entrancedate> "2008-11-12 09:45:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://example.com/Patient11> <http://example.com/paid> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://example.com/Patient12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://example.com/Patient12> <http://example.com/id> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://example.com/Patient12> <http://xmlns.com/foaf/0.1/firstName> "Chandler"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://example.com/Patient12> <http://xmlns.com/foaf/0.1/lastName> "Bing"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://example.com/Patient12> <http://xmlns.com/foaf/0.1/gender> "male"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://example.com/Patient12> <http://example.com/weight> "90.31"^^<http://www.w3.org/2001/XMLSchema#real> .
-<http://example.com/Patient12> <http://example.com/height> "1.76"^^<http://www.w3.org/2001/XMLSchema#float> .
-<http://example.com/Patient12> <http://example.com/birthdate> "1978-04-06"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://example.com/Patient12> <http://example.com/entrancedate> "2007-03-12 02:13:14"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://example.com/Patient12> <http://example.com/paid> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 
