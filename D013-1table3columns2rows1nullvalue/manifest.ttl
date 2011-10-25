@@ -7,7 +7,7 @@
 	dcterms:title "Table with null value" ;
 	dcterms:identifier "D013-1table3columns2rows1nullvalue" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0013> ;
+	rdb2rdftest:relatedTestCase <dg0013>, <tc0013a> ;
 .
 
 <dg0013> a rdb2rdftest:DirectMapping ;	
@@ -20,3 +20,15 @@
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "directGraph.nt" ;
 .
+
+<tc0013a> a rdb2rdftest:R2RML ;	
+	dcterms:title "Duplicate tuples generate same blank node" ; 
+	dcterms:identifier "R2RMLTC013a" ;
+	test:purpose "Tests the presence of null values in a template valued term map" ;
+	test:specificationReference "#dfn-template-valued-term-map" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d013> ;
+	rdb2rdftest:hasExpectedOutput true ;	
+	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+. 

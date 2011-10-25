@@ -23,7 +23,7 @@
 	  
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate foaf:name ]; 
+      rr:predicateMap [ rr:constant foaf:name ]; 
       rr:objectMap    [ 
             rr:template "{fname} {lname}";
             rr:termType rr:Literal ;
@@ -32,7 +32,7 @@
     
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate ex:amount ]; 
+      rr:predicateMap [ rr:constant ex:amount ]; 
       rr:objectMap    [ 
             rr:column "amount";
             rr:termType rr:Literal ;

@@ -18,29 +18,11 @@
 		rr:predicate rdf:type;
 		rr:object foaf:Person;
 	];
-	
-    rr:predicateObjectMap
-    [ 
-		rr:predicateMap [ rr:constant ex:id; ];
-		rr:objectMap    [ rr:column "ID"; rr:datatype xsd:integer ]
-    ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicate	foaf:firstName;
-      rr:objectMap    [ rr:column "FirstName"; rr:datatype xsd:string ]
-    ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicate foaf:lastName;
-      rr:objectMap    [ rr:column "LastName"; rr:datatype xsd:string ]
-    ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicate foaf:gender;
-      rr:objectMap    [ rr:column "Sex"; rr:datatype xsd:string ]
+      rr:predicate ex:paid;
+      rr:objectMap    [ rr:column "PaidInAdvance"; rr:datatype xsd:boolean ]
     ];
 
     .

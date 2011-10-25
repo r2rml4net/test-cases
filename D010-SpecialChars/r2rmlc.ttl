@@ -13,7 +13,7 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate ex:code ]; 
+      rr:predicateMap [ rr:constant ex:code ]; 
       rr:objectMap    [ rr:template "\\{\\{\\{ {ISO 3166} \\}\\}\\}" ]
     ]
     .

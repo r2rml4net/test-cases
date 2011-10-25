@@ -21,20 +21,20 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate ex:id ]; 
+      rr:predicateMap [ rr:constant ex:id ]; 
       rr:objectMap    [ rr:column "ID"; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate ex:firstName ]; 
+      rr:predicateMap [ rr:constant ex:firstName ]; 
       rr:objectMap    [ rr:template "http://example.com/data/{FirstName}";
 						rr:termType rr:IRI ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:predicate ex:lastName ]; 
+      rr:predicateMap [ rr:constant ex:lastName ]; 
       rr:objectMap    [ rr:template "http://example.com/data/{LastName}";
 						rr:termType rr:IRI ]
     ]

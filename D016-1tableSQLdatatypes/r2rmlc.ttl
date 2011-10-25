@@ -21,26 +21,14 @@
 	
     rr:predicateObjectMap
     [ 
-		rr:predicateMap [ rr:constant ex:id; ];
-		rr:objectMap    [ rr:column "ID"; rr:datatype xsd:integer ]
+      rr:predicate ex:birthdate;
+      rr:objectMap    [ rr:column "BirthDate"; rr:datatype xsd:date ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicate	foaf:firstName;
-      rr:objectMap    [ rr:column "FirstName"; rr:datatype xsd:string ]
-    ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicate foaf:lastName;
-      rr:objectMap    [ rr:column "LastName"; rr:datatype xsd:string ]
-    ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicate foaf:gender;
-      rr:objectMap    [ rr:column "Sex"; rr:datatype xsd:string ]
+      rr:predicate ex:entrancedate;
+      rr:objectMap    [ rr:column "EntranceDate"; rr:datatype xsd:dateTime ]
     ];
 
     .
