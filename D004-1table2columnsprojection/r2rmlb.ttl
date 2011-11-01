@@ -7,8 +7,9 @@
 <TriplesMap1>
     a rr:TriplesMap;
 
-      rr:logicalTable [ rr:SQLQuery """
-       Select ('Student' || Student) AS StudentId
+      rr:logicalTable [ rr:sqlQuery """
+       Select ('Student' || Student) AS StudentId,
+				Student
          from Student_Sport
        """;
 	   ] ;
@@ -26,10 +27,12 @@
 <TriplesMap2>
     a rr:TriplesMap;
 
-      rr:SQLQuery """
-       Select ('Sport' || Sport) AS SportId
+      rr:logicalTable [ rr:sqlQuery """
+       Select ('Sport' || Sport) AS SportId,
+			Sport
          from Student_Sport
        """;
+	  ];
 
     rr:subjectMap [ rr:column "SportId"; rr:termType rr:BlankNode;
                     rr:class ex:Sport  ];

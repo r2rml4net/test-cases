@@ -12,10 +12,10 @@
                        Select ('Student' || ID ) AS StudentId
                             , ID
                             , Name
-                         from boricles.Student
+                         from SA.Student
                        """;
 					   
-			rr:sqlVersion rr:SQL2008 .					   
+			rr:sqlVersion rr:SQL2008 				   
 					   
                        ];
 	

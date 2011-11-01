@@ -12,7 +12,7 @@
 
 <tc0016a> a rdb2rdftest:R2RML ;	
 	dcterms:title "Table with datatypes" ; 
-	dcterms:identifier "R2RMLTC016a" ;
+	dcterms:identifier "R2RMLTC0016a" ;
 	test:purpose "Tests the rr:termtype  and datatype conversions: string and integer" ;
 	test:specificationReference "#datatype-conversions" ;
 	test:reviewStatus test:unreviewed ;
@@ -24,7 +24,7 @@
 
 <tc0016b> a rdb2rdftest:R2RML ;	
 	dcterms:title "Table with datatypes" ; 
-	dcterms:identifier "R2RMLTC016b" ;
+	dcterms:identifier "R2RMLTC0016b" ;
 	test:purpose "Tests the rr:termtype and datatype conversions: real and float" ;
 	test:specificationReference "#datatype-conversions" ;
 	test:reviewStatus test:unreviewed ;
@@ -36,7 +36,7 @@
 
 <tc0016c> a rdb2rdftest:R2RML ;	
 	dcterms:title "Table with datatypes" ; 
-	dcterms:identifier "R2RMLTC016c" ;
+	dcterms:identifier "R2RMLTC0016c" ;
 	test:purpose "Tests the rr:termtype and datatype conversions: date and timestamp" ;
 	test:specificationReference "#datatype-conversions" ;
 	test:reviewStatus test:unreviewed ;
@@ -48,7 +48,7 @@
 
 <tc0016d> a rdb2rdftest:R2RML ;	
 	dcterms:title "Table with datatypes" ; 
-	dcterms:identifier "R2RMLTC016d" ;
+	dcterms:identifier "R2RMLTC0016d" ;
 	test:purpose "Tests the rr:termtype and datatype conversions: boolean" ;
 	test:specificationReference "#datatype-conversions" ;
 	test:reviewStatus test:unreviewed ;
@@ -60,7 +60,7 @@
 
 <tc0016e> a rdb2rdftest:R2RML ;	
 	dcterms:title "Table with datatypes" ; 
-	dcterms:identifier "R2RMLTC016e" ;
+	dcterms:identifier "R2RMLTC0016e" ;
 	test:purpose "Tests the rr:termtype and datatype conversions: binary" ;
 	test:specificationReference "#datatype-conversions" ;
 	test:reviewStatus test:unreviewed ;

@@ -12,7 +12,7 @@
 
 <tc0015a> a rdb2rdftest:R2RML ;	
 	dcterms:title "Table with language information" ; 
-	dcterms:identifier "R2RMLTC015a" ;
+	dcterms:identifier "R2RMLTC0015a" ;
 	test:purpose "Tests the language tag" ;
 	test:specificationReference "#language-tags" ;
 	test:reviewStatus test:unreviewed ;
@@ -24,7 +24,7 @@
 
 <tc0015b> a rdb2rdftest:R2RML ;	
 	dcterms:title "Table with language information" ; 
-	dcterms:identifier "R2RMLTC015b" ;
+	dcterms:identifier "R2RMLTC0015b" ;
 	test:purpose "Tests a term map with rr:language where the value isn't a valid language, which is an error" ;
 	test:specificationReference "#language-tags" ;
 	test:reviewStatus test:unreviewed ;

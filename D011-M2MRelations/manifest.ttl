@@ -23,7 +23,7 @@
 
 <tc0011a> a rdb2rdftest:R2RML ;	
 	dcterms:title "M to N relation, by using a SQL query" ; 
-	dcterms:identifier "R2RMLTC011a" ;
+	dcterms:identifier "R2RMLTC0011a" ;
 	test:purpose "Tests, M to N relations, by using a SQL query" ;
 	test:specificationReference "#r2rml-views" ;
 	test:reviewStatus test:unreviewed ;
@@ -35,7 +35,7 @@
 
 <tc0011b> a rdb2rdftest:R2RML ;	
 	dcterms:title "M to N relation, by using an additional Triples Map" ; 
-	dcterms:identifier "R2RMLTC011b" ;
+	dcterms:identifier "R2RMLTC0011b" ;
 	test:purpose "Tests, M to N relations, by using an additional Triples Map" ;
 	test:specificationReference "#termtype" ;
 	test:reviewStatus test:unreviewed ;

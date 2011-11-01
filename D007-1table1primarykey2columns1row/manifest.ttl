@@ -7,7 +7,7 @@
 	dcterms:title "One table, one column, one primary key" ;
 	dcterms:identifier "D007-1table1primarykey2columns1row" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0007>, <tc0007a>, <tc0007b>, <tc0007c>, <tc0007d> ;
+	rdb2rdftest:relatedTestCase <dg0007>, <tc0007a>, <tc0007b>, <tc0007c>, <tc0007d>, <tc0007e>, <tc0007f>  ;
 .
 
 <dg0007> a rdb2rdftest:DirectMapping ;	
@@ -25,7 +25,7 @@
 	dcterms:title "One column mapping" ; 
 	dcterms:identifier "R2RMLTC0007a" ;
 	test:purpose "Tests constant-value term map by using rr:constant property" ;
-	test:specificationReference "#termtype" ;
+	test:specificationReference "#constant" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d007> ;
 	rdb2rdftest:output "mappeda.nq" ;
@@ -37,7 +37,7 @@
 	dcterms:title "One column mapping" ; 
 	dcterms:identifier "R2RMLTC0007b" ;
 	test:purpose "Tests constant-value term map by using constant shortcut properties rr:predicate, rr:object and rr:graph. Also directly using rr:tableName" ;
-	test:specificationReference "#termtype" ;
+	test:specificationReference "#constant" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d007> ;
 	rdb2rdftest:output "mappedb.nq" ;
@@ -49,7 +49,7 @@
 	dcterms:title "One column mapping" ; 
 	dcterms:identifier "R2RMLTC0007c" ;
 	test:purpose "Tests subjectmap with more than one class IRIs, rr:class" ;
-	test:specificationReference "#termtype" ;
+	test:specificationReference "#typing" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d007> ;
 	rdb2rdftest:output "mappedc.nq" ;
@@ -60,11 +60,35 @@
 <tc0007d> a rdb2rdftest:R2RML ;	
 	dcterms:title "One column mapping" ; 
 	dcterms:identifier "R2RMLTC0007d" ;
-	test:purpose "Tests subjectmap with an alternative of having rr:class, i.e., by specifying an rr:predicateObjectMap with predicate rdf:type" ;
-	test:specificationReference "#termtype" ;
+	test:purpose " Tests subjectmap with an alternative of having rr:class, i.e., by specifying an rr:predicateObjectMap with predicate rdf:type" ;
+	test:specificationReference "#typing" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d007> ;
 	rdb2rdftest:output "mappedd.nq" ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
+.
+
+<tc0007e> a rdb2rdftest:R2RML ;	
+	dcterms:title "One column mapping" ; 
+	dcterms:identifier "R2RMLTC0007e" ;
+	test:purpose "Tests subjectmap with rr:graphMap and rr:class" ;
+	test:specificationReference "#named-graphs" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d007> ;
+	rdb2rdftest:output "mappede.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmle.ttl" ;
+.
+
+<tc0007f> a rdb2rdftest:R2RML ;	
+	dcterms:title "One column mapping" ; 
+	dcterms:identifier "R2RMLTC0007f" ;
+	test:purpose "Tests subjectmap with rr:graphMap and specifying an rr:predicateObjectMap with predicate rdf:type" ;
+	test:specificationReference "#named-graphs" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d007> ;
+	rdb2rdftest:output "mappedf.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmlf.ttl" ;
 .

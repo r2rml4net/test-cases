@@ -26,9 +26,9 @@
       ];
     ];
 
-    rr:refPredicateObjectMap
+    rr:predicateObjectMap
     [ 
-      rr:refPredicateMap [ rr:constant <http://example.com/ontology/practises> ]; 
+      rr:predicateMap [ rr:constant <http://example.com/ontology/practises> ]; 
       rr:refObjectMap    [ 
            rr:parentTriplesMap <TriplesMap2>;
            rr:joinCondition [
@@ -40,8 +40,7 @@
     .
 
 <TriplesMap2>
-    a rr:TriplesMapClass;
-        
+    a rr:TriplesMap;
 		
 	rr:logicalTable [ rr:tableName  "Sport" ];
 
