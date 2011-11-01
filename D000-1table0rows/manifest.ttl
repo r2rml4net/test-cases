@@ -23,7 +23,7 @@
 
 <tc0000> a rdb2rdftest:R2RML ;	
 	dcterms:title "Empty table" ; 
-	dcterms:identifier "R2RMLTC000" ;
+	dcterms:identifier "R2RMLTC0000" ;
 	test:purpose "Tests if an empty table produces an empty RDF graph" ;
 	test:specificationReference "#physical-tables" ;
 	test:reviewStatus test:unreviewed ;

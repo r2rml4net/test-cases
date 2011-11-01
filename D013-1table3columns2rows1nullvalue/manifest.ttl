@@ -23,7 +23,7 @@
 
 <tc0013a> a rdb2rdftest:R2RML ;	
 	dcterms:title "Duplicate tuples generate same blank node" ; 
-	dcterms:identifier "R2RMLTC013a" ;
+	dcterms:identifier "R2RMLTC0013a" ;
 	test:purpose "Tests the presence of null values in a template valued term map" ;
 	test:specificationReference "#dfn-template-valued-term-map" ;
 	test:reviewStatus test:unreviewed ;

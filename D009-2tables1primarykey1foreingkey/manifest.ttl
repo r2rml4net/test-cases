@@ -23,7 +23,7 @@
 
 <tc0009a> a rdb2rdftest:R2RML ;	
 	dcterms:title "Two tables to 1 primary key 1 foreing key" ; 
-	dcterms:identifier "R2RMLTC009a" ;
+	dcterms:identifier "R2RMLTC0009a" ;
 	test:purpose "Test foreign key relationships among logical tables" ;
 	test:specificationReference "#foreign-key" ;
 	test:reviewStatus test:unreviewed ;
@@ -35,7 +35,7 @@
 
 <tc0009b> a rdb2rdftest:R2RML ;	
 	dcterms:title "Two tables to multiple graphs" ; 
-	dcterms:identifier "R2RMLTC009b" ;
+	dcterms:identifier "R2RMLTC0009b" ;
 	test:purpose "Test that results from distinct parts of the mapping can be directed to different target graphs." ;
 	test:specificationReference "#named-graphs" ;
 	test:reviewStatus test:unreviewed ;

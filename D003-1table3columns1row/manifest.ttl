@@ -36,7 +36,7 @@
 <tc0003b> a rdb2rdftest:R2RML ;	
 	dcterms:title "Two columns mapping" ; 
 	dcterms:identifier "R2RMLTC0003b" ;
-	test:purpose "Tests: (1) two column mapping, no primary key; (2) generation of a \"BlankNode\" subject; (3) one column to one property" ;
+	test:purpose "Tests: (1) two column mapping, no primary key; (2) one column to one property and (3) from template feature" ;
 	test:specificationReference "#from-template"  ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d003> ;
@@ -49,7 +49,7 @@
 	dcterms:title "Two columns mapping" ; 
 	dcterms:identifier "R2RMLTC0003c" ;
 	test:purpose "Tests rr:termType rr:BlankNode and rr:Literal" ;
-	test:specificationReference "#from-template"  ;
+	test:specificationReference "#termtype"  ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d003> ;
 	rdb2rdftest:output "mappedc.nq" ;

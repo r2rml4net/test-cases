@@ -13,7 +13,7 @@
                             , "ID"
                             , "Name"
 					, "ID"
-                       from "boricles.Student"
+                       from "SA.Student"
                        """
                        ];
 
