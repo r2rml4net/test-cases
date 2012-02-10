@@ -15,7 +15,7 @@
         rr:template "http://example.com/resource/student_{ID}";
         rr:termType rr:IRI;
         rr:class <http://example.com/ontology/Student>;
-        rr:graphMap [ rr:graph <http://example.com/graph/students> ] ;
+        rr:graphMap [ rr:constant <http://example.com/graph/students> ] ;
     ]; 
 	
     rr:predicateObjectMap
@@ -25,7 +25,7 @@
              rr:column "Name";
              rr:termType rr:Literal;
       ];
-      rr:graphMap [ rr:graph <http://example.com/graph/students> ];
+      rr:graphMap [ rr:constant <http://example.com/graph/students> ];
     ];
 
     rr:predicateObjectMap
@@ -38,12 +38,12 @@
 				rr:parent "ID" ;
 		   ]
       ];
-      rr:graphMap [ rr:graph <http://example.com/graph/practise> ];
+      rr:graphMap [ rr:constant <http://example.com/graph/practise> ];
     ];
     .
 
 <TriplesMap2>
-    a rr:TriplesMapClass;
+    a rr:TriplesMap;
         
 		
 	rr:logicalTable [ rr:tableName  "Sport" ];
@@ -53,7 +53,7 @@
         rr:template "http://example.com/resource/sport_{ID}";
         rr:termType rr:IRI;
         rr:class <http://example.com/ontology/Sport>;
-        rr:graphMap [ rr:graph <http://example.com/graph/sports> ];
+        rr:graphMap [ rr:constant <http://example.com/graph/sports> ];
     ]; 
 	
     rr:predicateObjectMap
@@ -63,6 +63,6 @@
              rr:column "Name"; 
              rr:termType rr:Literal;
       ];
-      rr:graphMap [ rr:graph <http://example.com/graph/sports> ];
+      
     ];
 	.

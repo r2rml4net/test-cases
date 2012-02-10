@@ -20,7 +20,7 @@
 
     rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;
                     rr:class ex:dept; 
-                    rr:graphMap [ rr:graph ex:DeptGraph; ];
+                    rr:graphMap [ rr:constant ex:DeptGraph; ];
                     rr:inverseExpression "{deptno} = substr({deptId},length('Department')+1)"];
 
     rr:predicateObjectMap
@@ -44,7 +44,7 @@
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant dept:COMPANY ]; 
-      rr:objectMap    [ rr:object "EXAMPLE Corporation" ]
+      rr:objectMap    [ rr:constant "EXAMPLE Corporation" ]
     ]
 .
 
@@ -101,7 +101,7 @@
     [ 
       rr:predicateMap [ rr:constant emp:name ]; 
       rr:objectMap    [ rr:column "ename" ]; 
-      rr:graphMap     [ rr:graph emp:empNameGraph ];
+      rr:graphMap     [ rr:constant emp:empNameGraph ];
     ];
 
     rr:predicateObjectMap 
