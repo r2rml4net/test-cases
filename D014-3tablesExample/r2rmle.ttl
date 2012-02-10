@@ -13,12 +13,12 @@
       Select ('http://example.com/emp/' || id) AS empId
            , ('http://example.com/emp/likes/' || likeType) AS empLikes
            , likedObj
-        from SA.LIKES
+        from LIKES
       """ ];
 
     rr:subjectMap [
       rr:column "empId";
-      rr:graphMap [ rr:graph ex:LikesGraph ];
+      rr:graphMap [ rr:constant ex:LikesGraph ];
     ];
 
     rr:predicateObjectMap 
