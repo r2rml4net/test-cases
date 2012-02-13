@@ -4,14 +4,14 @@
 @base <http://mappingpedia.org/rdb2rdf/tc/> .
 
 <d006> a rdb2rdftest:DataBase;
-	dcterms:title "One table, one column, one primary key" ;
+	dcterms:title "One table, one primary key, one column, one row" ;
 	dcterms:identifier "D006-1table1primarykey1column1row" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
 	rdb2rdftest:relatedTestCase <dg0006>, <tc0006a> ;
 .
 
 <dg0006> a rdb2rdftest:DirectMapping ;	
-	dcterms:title "One table, one column, one primary key"; 
+	dcterms:title "One table, one primary key, one column, one row"; 
 	dcterms:identifier "Direct Graph TC0006" ;
 	test:purpose "Tests a table with a column that is a primary key" ;
 	test:specificationReference "#rules_table_triples" ;
