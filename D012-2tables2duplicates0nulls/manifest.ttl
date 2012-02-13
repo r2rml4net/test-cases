@@ -5,7 +5,7 @@
 @base <http://mappingpedia.org/rdb2rdf/tc/> .
 
 <d012> a rdb2rdftest:DataBase;
-	dcterms:title "Two tables two duplicates zero nulls" ;
+	dcterms:title "Two tables, two duplicate records, zero nulls" ;
 	dcterms:identifier "D012-2tables2duplicates0nulls" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
 	rdb2rdftest:relatedTestCase <tc0012a>, <tc0012b>, <tc0012c>, <tc0012d> ;
