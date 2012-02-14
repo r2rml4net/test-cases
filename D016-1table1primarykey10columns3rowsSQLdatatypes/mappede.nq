@@ -1,7 +1,0 @@
-<http://example.com/Patient10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://example.com/Patient10> <http://example.com/id> "eILK"^^<http://www.w3.org/2001/XMLSchema#base64Binary> .
-<http://example.com/Patient11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://example.com/Patient11> <http://example.com/id> "utH1"^^<http://www.w3.org/2001/XMLSchema#base64Binary> .
-<http://example.com/Patient12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://example.com/Patient12> <http://example.com/id> "0bfl+w=="^^<http://www.w3.org/2001/XMLSchema#base64Binary> .
-
