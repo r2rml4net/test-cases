@@ -11,9 +11,9 @@
 .
 
 <dg0008> a rdb2rdftest:DirectMapping ;	
-	dcterms:title "Composite primary key"; 
+	dcterms:title "Generation of direct graph from a table with composite primary key"; 
 	dcterms:identifier "Direct Graph TC0008" ;
-	test:purpose "Tests a table with a composite primary key" ;
+	test:purpose "Tests the generation of a direct graph from a table with a composite primary key" ;
 	test:specificationReference "#rules_table_triples" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d008> ;
@@ -23,7 +23,7 @@
 
 
 <tc0008a> a rdb2rdftest:R2RML ;	
-	dcterms:title "Table with datatypes" ; 
+	dcterms:title "Generation of triples to a target graph" ; 
 	dcterms:identifier "R2RMLTC0008a" ;
 	test:purpose "Test that results of the mapping can be directed to a target graph." ;
 	test:specificationReference "#named-graphs" ;

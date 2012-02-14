@@ -4,10 +4,21 @@
 @base <http://mappingpedia.org/rdb2rdf/tc/> .
 
 <d015> a rdb2rdftest:DataBase;
-	dcterms:title "Table with language information" ;
+	dcterms:title "One table, three columns, one composite primary key, three rows, two languages" ;
 	dcterms:identifier "D015-1table3columns1composityeprimarykey3rows2languages" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <tc0015a>, <tc0015b> ;
+	rdb2rdftest:relatedTestCase <dg0015>, <tc0015a>, <tc0015b> ;
+.
+
+<dg0015> a rdb2rdftest:DirectMapping ;	
+	dcterms:title "Generation of direct graph from multi-column primary keys"; 
+	dcterms:identifier "Direct Graph TC0015" ;
+	test:purpose "Tests the generation of direct graph from multi-column primary keys" ;
+	test:specificationReference "#rules_table_triples" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d015> ;
+	rdb2rdftest:hasExpectedOutput true ;	
+	rdb2rdftest:output "directGraph.nt" ;
 .
 
 <tc0015a> a rdb2rdftest:R2RML ;	

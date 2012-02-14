@@ -11,9 +11,9 @@
 .
 
 <dg0007> a rdb2rdftest:DirectMapping ;	
-	dcterms:title "A table with a primary key and two columns"; 
+	dcterms:title "Generation of a subject"; 
 	dcterms:identifier "Direct Graph TC0007" ;
-	test:purpose "Tests a table with a primary key and two columns" ;
+	test:purpose "Tests the generation of a subject" ;
 	test:specificationReference "#rules_table_triples" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d007> ;
@@ -22,7 +22,7 @@
 .
 
 <tc0007a> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping" ; 
+	dcterms:title "One column mapping, using rr:constant property" ; 
 	dcterms:identifier "R2RMLTC0007a" ;
 	test:purpose "Tests constant-value term map by using rr:constant property" ;
 	test:specificationReference "#constant" ;
@@ -34,7 +34,7 @@
 .
 
 <tc0007b> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping" ; 
+	dcterms:title "One column mapping, using constant shortcut properties" ; 
 	dcterms:identifier "R2RMLTC0007b" ;
 	test:purpose "Tests constant-value term map by using constant shortcut properties rr:predicate, rr:object and rr:graph. Also directly using rr:tableName" ;
 	test:specificationReference "#constant" ;
@@ -46,7 +46,7 @@
 .
 
 <tc0007c> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping" ; 
+	dcterms:title "One column mapping, using rr:class" ; 
 	dcterms:identifier "R2RMLTC0007c" ;
 	test:purpose "Tests subjectmap with more than one class IRIs, rr:class" ;
 	test:specificationReference "#typing" ;
@@ -58,7 +58,7 @@
 .
 
 <tc0007d> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping" ; 
+	dcterms:title "One column mapping, specifying an rr:predicaObjectMap with rdf:type" ; 
 	dcterms:identifier "R2RMLTC0007d" ;
 	test:purpose " Tests subjectmap with an alternative of having rr:class, i.e., by specifying an rr:predicateObjectMap with predicate rdf:type" ;
 	test:specificationReference "#typing" ;
@@ -70,7 +70,7 @@
 .
 
 <tc0007e> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping" ; 
+	dcterms:title "One column mapping, using rr:graphMap and rr:class" ; 
 	dcterms:identifier "R2RMLTC0007e" ;
 	test:purpose "Tests subjectmap with rr:graphMap and rr:class" ;
 	test:specificationReference "#named-graphs" ;
@@ -82,7 +82,7 @@
 .
 
 <tc0007f> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping" ; 
+	dcterms:title "One column mapping, using rr:graphMap and specifying an rr:predicaObjectMap with rdf:type" ; 
 	dcterms:identifier "R2RMLTC0007f" ;
 	test:purpose "Tests subjectmap with rr:graphMap and specifying an rr:predicateObjectMap with predicate rdf:type" ;
 	test:specificationReference "#named-graphs" ;
@@ -94,7 +94,7 @@
 .
 
 <tc0007g> a rdb2rdftest:R2RML ;	
-	dcterms:title "Empty R2RML mapping file" ; 
+	dcterms:title "Empty R2RML mapping file that generates an empty output datasets" ; 
 	dcterms:identifier "R2RMLTC0007g" ;
 	test:purpose "Tests an empty R2RML mapping file that generates an empty output dataset" ;
 	test:specificationReference "#generated-rdf" ;
