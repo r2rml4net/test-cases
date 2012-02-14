@@ -1,0 +1,36 @@
+@prefix test: <http://www.w3.org/2006/03/test-description#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
+@base <http://mappingpedia.org/rdb2rdf/tc/> .
+
+<d008> a rdb2rdftest:DataBase;
+	dcterms:title "One table, a composite primary key, three columns, one row" ;
+	dcterms:identifier "D008-1table1compositeprimarykey3columns1row" ;
+	rdb2rdftest:sqlScriptFile "create.sql";
+	rdb2rdftest:relatedTestCase <dg0008>, <tc0008a> ;
+.
+
+<dg0008> a rdb2rdftest:DirectMapping ;	
+	dcterms:title "Generation of direct graph from a table with composite primary key"; 
+	dcterms:identifier "Direct Graph TC0008" ;
+	test:purpose "Tests the generation of a direct graph from a table with a composite primary key" ;
+	test:specificationReference "#rules_table_triples" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d008> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "directGraph.nt" ;
+.
+
+
+<tc0008a> a rdb2rdftest:R2RML ;	
+	dcterms:title "Generation of triples to a target graph" ; 
+	dcterms:identifier "R2RMLTC0008a" ;
+	test:purpose "Test that results of the mapping can be directed to a target graph." ;
+	test:specificationReference "#named-graphs" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d008> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+.
+
