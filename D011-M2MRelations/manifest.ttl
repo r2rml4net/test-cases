@@ -13,7 +13,7 @@
 <dg0011> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "Many to Many relations"; 
 	dcterms:identifier "Direct Graph TC0011" ;
-	test:purpose "Tests M to M relations" ;
+	test:purpose "Tests the generation of triples from tables M to M relations" ;
 	test:specificationReference "#rules_table_triples" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d011> ;

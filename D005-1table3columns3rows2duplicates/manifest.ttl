@@ -4,14 +4,14 @@
 @base <http://mappingpedia.org/rdb2rdf/tc/> .
 
 <d005> a rdb2rdftest:DataBase;
-	dcterms:title "One table, three columns, three rows, two duplicate tuples" ;
+	dcterms:title "One table, three columns, three rows, two duplicate tuples, no primary key" ;
 	dcterms:identifier "D005-1table3columns3rows2duplicates" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
 	rdb2rdftest:relatedTestCase <dg0005>, <tc0005a> ;
 .
 
 <dg0005> a rdb2rdftest:DirectMapping ;	
-	dcterms:title "Duplicate tuples, no primary key"; 
+	dcterms:title "Generation of BlankNodes from duplicate tuples"; 
 	dcterms:identifier "Direct Graph TC0005" ;
 	test:purpose "Tests the generation of Blank Nodes for duplicate tuples" ;
 	test:specificationReference "#rules_table_triples" ;
@@ -22,7 +22,7 @@
 .
 
 <tc0005a> a rdb2rdftest:R2RML ;	
-	dcterms:title "Duplicate tuples, no primary key" ; 
+	dcterms:title "generation of duplicate triples, typing of resources" ; 
 	dcterms:identifier "R2RMLTC0005a" ;
 	test:purpose "Tests the generation of duplicate triples and the typing of resources" ;
 	test:specificationReference "#typing" ;

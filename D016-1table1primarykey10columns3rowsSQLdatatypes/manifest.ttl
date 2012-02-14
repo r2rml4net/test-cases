@@ -4,7 +4,7 @@
 @base <http://mappingpedia.org/rdb2rdf/tc/> .
 
 <d016> a rdb2rdftest:DataBase;
-	dcterms:title "Table with datatypes" ;
+	dcterms:title "One table, one primary key, ten columns, three rows with sql datatypes" ;
 	dcterms:identifier "D016-1table1primarykey10columns3rowsSQLdatatypes" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
 	rdb2rdftest:relatedTestCase <tc0016a>, <tc0016b>, <tc0016c>, <tc0016d>, <tc0016e> ;

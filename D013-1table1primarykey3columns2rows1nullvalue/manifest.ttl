@@ -4,16 +4,16 @@
 @base <http://mappingpedia.org/rdb2rdf/tc/> .
 
 <d013> a rdb2rdftest:DataBase;
-	dcterms:title "Table with null value" ;
+	dcterms:title "One table, one primary key, three columns, two rows, a null value" ;
 	dcterms:identifier "D013-1table1primarykey3columns2rows1nullvalue" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
 	rdb2rdftest:relatedTestCase <dg0013>, <tc0013a> ;
 .
 
 <dg0013> a rdb2rdftest:DirectMapping ;	
-	dcterms:title "Direct Graph of a table with NULL values"; 
+	dcterms:title "Generation of a direct graph from a table with NULL values"; 
 	dcterms:identifier "Direct Graph TC0013" ;
-	test:purpose "Tests Direct Graph of table with NULL values" ;
+	test:purpose "Tests the generation of a Direct Graph from a table with NULL values" ;
 	test:specificationReference "#rules_table_triples" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d013> ;

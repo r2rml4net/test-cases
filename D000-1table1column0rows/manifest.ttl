@@ -4,14 +4,14 @@
 @base <http://mappingpedia.org/rdb2rdf/tc/> .
 
 <d000> a rdb2rdftest:DataBase;
-	dcterms:title "Empty table" ;
+	dcterms:title "One table, a column, zero rows, no primary key" ;
 	dcterms:identifier "D000-1table1column0rows" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
 	rdb2rdftest:relatedTestCase <dg0000>, <tc0000>;
 .
 
 <dg0000> a rdb2rdftest:DirectMapping;	
-	dcterms:title "one table, one column, zero rows"; 
+	dcterms:title "Direct mapping of an empty table"; 
 	dcterms:identifier "Direct Graph TC0000" ;
 	test:purpose "Tests if an empty table produces an empty RDF graph" ;
 	test:specificationReference "#rules_table_triples" ;
