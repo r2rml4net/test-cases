@@ -1,8 +1,0 @@
-<http://example.com/Person1Alice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://example.com/Person1Alice> <http://example.com/id> "1"^^<http://www.w3.org/2001/XMLSchema#integer> . 
-<http://example.com/Person1Alice> <http://xmlns.com/foaf/0.1/name> "Alice" .
-<http://example.com/Person2BobSeptember%2C%202010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://example.com/Person2BobSeptember%2C%202010> <http://example.com/id> "2"^^<http://www.w3.org/2001/XMLSchema#integer> . 
-<http://example.com/Person2BobSeptember%2C%202010> <http://xmlns.com/foaf/0.1/name> "Bob" .
-<http://example.com/Person2BobSeptember%2C%202010> <http://example.com/BirthDay> "September, 2010" .
-
