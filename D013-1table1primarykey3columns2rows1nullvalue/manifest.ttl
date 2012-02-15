@@ -1,0 +1,34 @@
+@prefix test: <http://www.w3.org/2006/03/test-description#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
+@base <http://mappingpedia.org/rdb2rdf/tc/> .
+
+<d013> a rdb2rdftest:DataBase;
+	dcterms:title "One table, one primary key, three columns, two rows, a null value" ;
+	dcterms:identifier "D013-1table1primarykey3columns2rows1nullvalue" ;
+	rdb2rdftest:sqlScriptFile "create.sql";
+	rdb2rdftest:relatedTestCase <dg0013>, <tc0013a> ;
+.
+
+<dg0013> a rdb2rdftest:DirectMapping ;	
+	dcterms:title "Generation of a direct graph from a table with NULL values"; 
+	dcterms:identifier "Direct Graph TC0013" ;
+	test:purpose "Tests the generation of a Direct Graph from a table with NULL values" ;
+	test:specificationReference "#rules_table_triples" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d013> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "directGraph.nt" ;
+.
+
+<tc0013a> a rdb2rdftest:R2RML ;	
+	dcterms:title "Duplicate tuples generate same blank node" ; 
+	dcterms:identifier "R2RMLTC0013a" ;
+	test:purpose "Tests the presence of null values in a template valued term map" ;
+	test:specificationReference "#dfn-template-valued-term-map" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d013> ;
+	rdb2rdftest:hasExpectedOutput true ;	
+	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+. 

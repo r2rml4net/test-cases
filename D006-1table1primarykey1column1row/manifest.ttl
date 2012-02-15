@@ -1,0 +1,34 @@
+@prefix test: <http://www.w3.org/2006/03/test-description#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
+@base <http://mappingpedia.org/rdb2rdf/tc/> .
+
+<d006> a rdb2rdftest:DataBase;
+	dcterms:title "One table, one primary key, one column, one row" ;
+	dcterms:identifier "D006-1table1primarykey1column1row" ;
+	rdb2rdftest:sqlScriptFile "create.sql";
+	rdb2rdftest:relatedTestCase <dg0006>, <tc0006a> ;
+.
+
+<dg0006> a rdb2rdftest:DirectMapping ;	
+	dcterms:title "Generation of subjects"; 
+	dcterms:identifier "Direct Graph TC0006" ;
+	test:purpose "Tests a the generation of subjects" ;
+	test:specificationReference "#rules_table_triples" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d006> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "directGraph.nt" ;
+.
+
+<tc0006a> a rdb2rdftest:R2RML ;	
+	dcterms:title "One column mapping using rr:template" ; 
+	dcterms:identifier "R2RMLTC0006a" ;
+	test:purpose "Tests one column mapping with one primary key and rr:template" ;
+	test:specificationReference "#dfn-template-valued-term-map" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d006> ;
+	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+.
