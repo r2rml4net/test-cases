@@ -1,0 +1,83 @@
+@prefix test: <http://www.w3.org/2006/03/test-description#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+@base <http://mappingpedia.org/rdb2rdf/tc/> .
+
+<d014> a rdb2rdftest:DataBase;
+	dcterms:title "3 tables, one primary key, one foreign key" ;
+	dcterms:identifier "D014-3tables1primarykey1foreignkey" ;
+	rdb2rdftest:sqlScriptFile "create.sql";
+	rdb2rdftest:relatedTestCase <dg0014>, <tc0014a>, <tc0014b>, <tc0014c>, <tc0014d>, <tc0014e> ;
+.
+
+<dg0014> a rdb2rdftest:DirectMapping ;	
+	dcterms:title "Generation of direct graph from a database with primary key referencing candidate key"; 
+	dcterms:identifier "Direct Graph TC0014" ;
+	test:purpose "Test the generation of direct graph from a database with primary key referencing candidate key";
+	test:specificationReference "#rules_table_triples" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d014> ;
+	rdb2rdftest:hasExpectedOutput true ;	
+	rdb2rdftest:output "directGraph.nt" ;
+.
+
+<tc0014a> a rdb2rdftest:R2RML ;	
+	dcterms:title "three tables, one primary key, one foreign key" ; 
+	dcterms:identifier "R2RMLTC0014a" ;
+	test:purpose "Tests a logicaltable with sqlQuery" ;
+	test:specificationReference "#dfn-graph-map" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d014> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappeda.nq" ;
+	rdb2rdftest:mappingDocument "r2rmla.ttl" ;
+.
+
+<tc0014b> a rdb2rdftest:R2RML ;	
+	dcterms:title "three tables, one primary key, one foreign key" ; 
+	dcterms:identifier "R2RMLTC0014b" ;
+	test:purpose "Mapping specification using SQL-based logical table definition" ;
+	test:specificationReference "#inverse" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d014> ;
+	rdb2rdftest:hasExpectedOutput true ;	
+	rdb2rdftest:output "mappedb.nq" ;
+	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;
+.
+
+<tc0014c> a rdb2rdftest:R2RML ;	
+	dcterms:title "three tables, one primary key, one foreign key" ; 
+	dcterms:identifier "R2RMLTC0014c" ;
+	test:purpose "Mapping specification using table name based logical table definition" ;
+	test:specificationReference "#foreign-key" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d014> ;
+	rdb2rdftest:output "mappedc.nq" ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
+.
+
+<tc0014d> a rdb2rdftest:R2RML ;	
+	dcterms:title "three tables, one primary key, one foreign key" ; 
+	dcterms:identifier "R2RMLTC0014d" ;
+	test:purpose "Mapping specification showing reuse of ObjectMap elements" ;
+	test:specificationReference "#foreign-key" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d014> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappedd.nq" ;	
+	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
+.
+
+<tc0014e> a rdb2rdftest:R2RML ;	
+	dcterms:title "three tables, one primary key, one foreign key" ; 
+	dcterms:identifier "R2RMLTC0014e" ;
+	test:purpose "Mapping Specification for the LIKES Table" ;
+	test:specificationReference "#dfn-output-dataset" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d014> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappede.nq" ;	
+	rdb2rdftest:mappingDocument "r2rmle.ttl" ;
+.
