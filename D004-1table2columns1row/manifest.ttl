@@ -1,7 +1,7 @@
 @prefix test: <http://www.w3.org/2006/03/test-description#> .
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
-@base <http://mappingpedia.org/rdb2rdf/tc/> .
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
 
 <d004> a rdb2rdftest:DataBase;
 	dcterms:title "One table, two columns, one row, projection, no primary key" ;
@@ -12,9 +12,9 @@
 
 <dg0004> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "Two column mapping, generation of a BlankNode subject"; 
-	dcterms:identifier "Direct Graph TC0004" ;
+	dcterms:identifier "DirectGraphTC0004" ;
 	test:purpose "Tests: (1) two column mapping (2) generation of a \"BlankNode\" subject" ;
-	test:specificationReference "#rules_table_triples" ;
+	test:specificationReference "#no-pk" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d004> ;
 	rdb2rdftest:hasExpectedOutput true ;

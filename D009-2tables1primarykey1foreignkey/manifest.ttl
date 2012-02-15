@@ -1,7 +1,7 @@
 @prefix test: <http://www.w3.org/2006/03/test-description#> .
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
-@base <http://mappingpedia.org/rdb2rdf/tc/> .
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
 
 <d009> a rdb2rdftest:DataBase;
 	dcterms:title "Two tables, a primary key, a foreign key" ;
@@ -12,9 +12,9 @@
 
 <dg0009> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "Two tables 1 primary key 1 foreign key"; 
-	dcterms:identifier "Direct Graph TC0009" ;
+	dcterms:identifier "DirectGraphTC0009" ;
 	test:purpose "Tests two tables with a primary key and a foreign key" ;
-	test:specificationReference "#rules_table_triples" ;
+	test:specificationReference "#fk-candidate" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d009> ;
 	rdb2rdftest:hasExpectedOutput true ;	

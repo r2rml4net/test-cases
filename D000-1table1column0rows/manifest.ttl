@@ -1,7 +1,7 @@
 @prefix test: <http://www.w3.org/2006/03/test-description#> .
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
-@base <http://mappingpedia.org/rdb2rdf/tc/> .
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
 
 <d000> a rdb2rdftest:DataBase;
 	dcterms:title "One table, a column, zero rows, no primary key" ;
@@ -12,9 +12,9 @@
 
 <dg0000> a rdb2rdftest:DirectMapping;	
 	dcterms:title "Direct mapping of an empty table"; 
-	dcterms:identifier "Direct Graph TC0000" ;
+	dcterms:identifier "DirectGraphTC0000" ;
 	test:purpose "Tests if an empty table produces an empty RDF graph" ;
-	test:specificationReference "#rules_table_triples" ;
+	test:specificationReference "#no-pk" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:database <d000> ;

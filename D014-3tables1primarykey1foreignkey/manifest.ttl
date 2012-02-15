@@ -2,7 +2,7 @@
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
-@base <http://mappingpedia.org/rdb2rdf/tc/> .
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
 
 <d014> a rdb2rdftest:DataBase;
 	dcterms:title "3 tables, one primary key, one foreign key" ;
@@ -13,9 +13,9 @@
 
 <dg0014> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "Generation of direct graph from a database with primary key referencing candidate key"; 
-	dcterms:identifier "Direct Graph TC0014" ;
+	dcterms:identifier "DirectGraphTC0014" ;
 	test:purpose "Test the generation of direct graph from a database with primary key referencing candidate key";
-	test:specificationReference "#rules_table_triples" ;
+	test:specificationReference "#lead-ex" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d014> ;
 	rdb2rdftest:hasExpectedOutput true ;	
