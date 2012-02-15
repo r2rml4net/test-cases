@@ -2,7 +2,7 @@
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
-@base <http://mappingpedia.org/rdb2rdf/tc/> .
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
 
 <d012> a rdb2rdftest:DataBase;
 	dcterms:title "Two tables, two duplicate records, zero nulls, no primary key" ;
@@ -13,9 +13,9 @@
 
 <dg0012> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "Generation of direct graph from a database without primary keys"; 
-	dcterms:identifier "Direct Graph TC0012" ;
+	dcterms:identifier "DirectGraphTC0012" ;
 	test:purpose "Test the generation of direct graph from a database without primary keys, by creating subject BlankNodes" ;
-	test:specificationReference "#rules_table_triples" ;
+	test:specificationReference "#no-pk" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
 	rdb2rdftest:hasExpectedOutput true ;	

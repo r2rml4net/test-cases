@@ -1,7 +1,7 @@
 @prefix test: <http://www.w3.org/2006/03/test-description#> .
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
-@base <http://mappingpedia.org/rdb2rdf/tc/> .
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
 
 <d016> a rdb2rdftest:DataBase;
 	dcterms:title "One table, one primary key, ten columns, three rows with sql datatypes" ;

@@ -1,7 +1,7 @@
 @prefix test: <http://www.w3.org/2006/03/test-description#> .
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
-@base <http://mappingpedia.org/rdb2rdf/tc/> .
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
 
 <d005> a rdb2rdftest:DataBase;
 	dcterms:title "One table, three columns, three rows, two duplicate tuples, no primary key" ;
@@ -12,9 +12,9 @@
 
 <dg0005> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "Generation of BlankNodes from duplicate tuples"; 
-	dcterms:identifier "Direct Graph TC0005" ;
+	dcterms:identifier "DirectGraphTC0005" ;
 	test:purpose "Tests the generation of Blank Nodes for duplicate tuples" ;
-	test:specificationReference "#rules_table_triples" ;
+	test:specificationReference "#no-pk" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d005> ;
 	rdb2rdftest:hasExpectedOutput true ;

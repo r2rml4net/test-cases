@@ -1,7 +1,7 @@
 @prefix test: <http://www.w3.org/2006/03/test-description#> .
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
-@base <http://mappingpedia.org/rdb2rdf/tc/> .
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
 
 <d010> a rdb2rdftest:DataBase;
 	dcterms:title "One table, a primary key, three columns, three rows" ;
@@ -12,9 +12,9 @@
 
 <dg0010> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "Generation of direct graph for table names with spaces"; 
-	dcterms:identifier "Direct Graph TC0010" ;
+	dcterms:identifier "DirectGraphTC0010" ;
 	test:purpose "Tests the generation of the direct graph for table names with spaces" ;
-	test:specificationReference "#rules_table_triples" ;
+	test:specificationReference "#lead-ex" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d010> ;
 	rdb2rdftest:hasExpectedOutput true ;	
