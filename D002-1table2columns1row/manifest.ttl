@@ -7,7 +7,7 @@
 	dcterms:title "One table, two columns, one row, no primary key" ;
 	dcterms:identifier "D002-1table2columns1row" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0002>, <tc0002a>, <tc0002b>, <tc0002c>, <tc0002d>, <tc0002e>, <tc0002f>, <tc0002g>, <tc0002h>, <tc0002i> ;
+	rdb2rdftest:relatedTestCase <dg0002>, <tc0002a>, <tc0002b>, <tc0002c>, <tc0002d>, <tc0002e>, <tc0002f>, <tc0002g>, <tc0002h>, <tc0002i>, <tc0002j> ;
 .
 
 <dg0002> a rdb2rdftest:DirectMapping ;	
@@ -123,4 +123,15 @@
 	rdb2rdftest:output "mappedi.nq" ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:mappingDocument "r2rmli.ttl" ;
+.
+
+<tc0002j> a rdb2rdftest:R2RML ;	
+	dcterms:title "Two columns mapping, qualified column names" ; 
+	dcterms:identifier "R2RMLTC0002h" ;
+	test:purpose "Tests the presence of qualified column names in the SELECT list of the SQL query" ;
+	test:specificationReference "#dfn-sql-identifier" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d002> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:mappingDocument "r2rmlj.ttl" ;
 .
