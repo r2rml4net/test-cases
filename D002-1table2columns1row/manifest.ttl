@@ -127,7 +127,7 @@
 
 <tc0002j> a rdb2rdftest:R2RML ;	
 	dcterms:title "Two columns mapping, qualified column names" ; 
-	dcterms:identifier "R2RMLTC0002h" ;
+	dcterms:identifier "R2RMLTC0002j" ;
 	test:purpose "Tests the presence of qualified column names in the SELECT list of the SQL query" ;
 	test:specificationReference "#dfn-sql-identifier" ;
 	test:reviewStatus test:unreviewed ;
