@@ -13,7 +13,7 @@
 <dg0017> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "I18N No Special Chars" ; 
 	dcterms:identifier "DirectGraphTC0017" ;
-	test:purpose "I18N No Special Chars" ;
+	test:purpose "Test de generation of a direct graph from a I18N No Special Chars database" ;
 	test:specificationReference "#no-pk" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d017> ;
