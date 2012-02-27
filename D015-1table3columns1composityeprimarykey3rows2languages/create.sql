@@ -1,7 +1,7 @@
 CREATE TABLE "Country" (
-  "Code" CHAR(2),
-  "Name" CHAR(100),
-  "Lan" CHAR(10),
+  "Code" VARCHAR(2),
+  "Name" VARCHAR(100),
+  "Lan" VARCHAR(10),
   PRIMARY KEY ("Code","Lan")
 );
 INSERT INTO "Country" ("Code", "Name", "Lan") VALUES ('BO', 'Bolivia, Plurinational State of', 'EN');
