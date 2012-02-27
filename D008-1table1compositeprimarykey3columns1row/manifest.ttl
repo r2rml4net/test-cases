@@ -46,10 +46,10 @@
 .
 
 <tc0008c> a rdb2rdftest:R2RML ;	
-	dcterms:title "Generation of triples by using multiple predicateObjectMap predicates referencing to the same logical table" ; 
+	dcterms:title "Generation of triples by using multiple predicateMaps referencing to the same logical table" ; 
 	dcterms:identifier "R2RMLTC0008c" ;
-	test:purpose "Tests the generation of triples by using multiple predicateObjectMap predicates referencing to the same logical table" ;
-	test:specificationReference "#dfn-referencing-object-map" ;
+	test:purpose "Generation of triples by using multiple predicateMaps referencing to the same logical table" ;
+	test:specificationReference "#dfn-predicate-object-map" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d008> ;
 	rdb2rdftest:hasExpectedOutput true ;
