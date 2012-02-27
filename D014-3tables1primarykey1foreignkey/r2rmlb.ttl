@@ -124,7 +124,7 @@
 
     rr:predicateObjectMap [
       rr:predicateMap [ rr:constant emp:c_ref_deptno ];
-      rr:refObjectMap    [
+      rr:objectMap    [
         rr:parentTriplesMap <TriplesMap1>;
         rr:joinCondition [
           rr:child "deptno";

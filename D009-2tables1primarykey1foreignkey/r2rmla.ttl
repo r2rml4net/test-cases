@@ -29,7 +29,7 @@
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant <http://example.com/ontology/practises> ]; 
-      rr:refObjectMap    [ 
+      rr:objectMap    [ 
            rr:parentTriplesMap <TriplesMap2>;
            rr:joinCondition [
 				rr:child "Sport" ;
