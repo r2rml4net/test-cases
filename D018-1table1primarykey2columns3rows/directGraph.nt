@@ -1,0 +1,9 @@
+_:a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <Student> .
+_:a <Student#id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:a <Student#name> "Venus          " .
+_:a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <Student> .
+_:a <Student#id> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:a <Student#name> "Fernando       " .
+_:a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <Student> .
+_:a <Student#id> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:a <Student#name> "David          " .
