@@ -61,8 +61,8 @@
 <tc0014d> a rdb2rdftest:R2RML ;	
 	dcterms:title "three tables, one primary key, one foreign key" ; 
 	dcterms:identifier "R2RMLTC0014d" ;
-	test:purpose "Mapping specification showing reuse of ObjectMap elements" ;
-	test:specificationReference "#foreign-key" ;
+	test:purpose "Mapping specification referencing object map" ;
+	test:specificationReference "#dfn-referencing-object-map" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d014> ;
 	rdb2rdftest:hasExpectedOutput true ;
@@ -80,4 +80,16 @@
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:output "mappede.nq" ;	
 	rdb2rdftest:mappingDocument "r2rmle.ttl" ;
+.
+
+<tc0014f> a rdb2rdftest:R2RML ;	
+	dcterms:title "Database type codes to IRIs" ; 
+	dcterms:identifier "R2RMLTC0014f" ;
+	test:purpose "Test the translation of database type codes to IRIs" ;
+	test:specificationReference "#example-translationtable" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d014> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappedf.nq" ;	
+	rdb2rdftest:mappingDocument "r2rmlf.ttl" ;
 .

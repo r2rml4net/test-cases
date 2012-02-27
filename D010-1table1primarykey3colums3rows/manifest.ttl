@@ -56,3 +56,5 @@
 	rdb2rdftest:output "mappedc.nq" ;
 	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
 .
+
+
