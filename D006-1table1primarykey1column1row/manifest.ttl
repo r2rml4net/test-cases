@@ -13,7 +13,7 @@
 <dg0006> a rdb2rdftest:DirectMapping ;	
 	dcterms:title "Generation of subjects"; 
 	dcterms:identifier "DirectGraphTC0006" ;
-	test:purpose "Tests a the generation of subjects" ;
+	test:purpose "Tests the generation of subjects" ;
 	test:specificationReference "#lead-ex" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d006> ;

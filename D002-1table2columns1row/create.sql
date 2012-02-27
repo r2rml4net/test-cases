@@ -1,5 +1,5 @@
 CREATE TABLE "Student" (
-"ID" integer,
-"Name" varchar(50)
+"ID" INTEGER,
+"Name" VARCHAR(15)
 );
 INSERT INTO "Student" ("ID", "Name") VALUES(10,'Venus');
