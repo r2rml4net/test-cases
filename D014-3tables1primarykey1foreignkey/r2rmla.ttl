@@ -13,7 +13,7 @@
             , "deptno"
             , "dname"
             , "loc"
-         from SA.DEPT
+         from DEPT
        """ ];
 
     rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;

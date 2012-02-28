@@ -13,7 +13,7 @@
                             , "ID"
                             , "Name"
 					, 1 AS "ID"
-                       from "SA.Student"
+                       from "Student"
                        """
                        ];
 

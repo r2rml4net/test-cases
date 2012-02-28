@@ -12,7 +12,7 @@
                        Select ('Student' || "ID" ) AS StudentId
                             , "ID"
                             , "Name"
-                         from "SA.Student"
+                         from "Student"
                        """
                        ];
 
