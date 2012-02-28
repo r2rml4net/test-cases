@@ -129,9 +129,10 @@
 	dcterms:title "Two columns mapping, qualified column names" ; 
 	dcterms:identifier "R2RMLTC0002j" ;
 	test:purpose "Tests the presence of qualified column names in the SELECT list of the SQL query" ;
-	test:specificationReference "#dfn-sql-identifier" ;
+	test:specificationReference "#dfn-schema-qualified-name" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d002> ;
+	rdb2rdftest:output "mappedj.nq" ;
 	rdb2rdftest:hasExpectedOutput true ;
 	rdb2rdftest:mappingDocument "r2rmlj.ttl" ;
 .
