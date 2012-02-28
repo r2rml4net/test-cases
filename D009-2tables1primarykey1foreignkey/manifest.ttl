@@ -52,7 +52,6 @@
 	test:specificationReference "#dfn-logical-table" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d009> ;
-	rdb2rdftest:output "mappedc.nq" ;
 	rdb2rdftest:hasExpectedOutput false ;
 	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
 .
