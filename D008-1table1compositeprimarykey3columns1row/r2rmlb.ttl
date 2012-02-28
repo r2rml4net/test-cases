@@ -2,9 +2,22 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ex: <http://example.com/> .
+@prefix activity: <http://activity.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
+
+<TriplesMap2>
+	a rr:TriplesMap;
+	rr:logicalTable [ rr:tableName "Student" ];
+
+	rr:subjectMap [ rr:template "http://example.com/{Sport}"; ];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [rr:constant rdf:type ];
+		rr:objectMap [rr:constant activity:Sport ]
+	];
+.
 
 <TriplesMap1>
      a rr:TriplesMap;
@@ -43,8 +56,7 @@
  
 <RefObjectMap1>
 	a rr:RefObjectMap;
-	rr:parentTriplesMap <TriplesMap1> ;
-	rr:column "Sport"  ;
+	rr:parentTriplesMap <TriplesMap2> ;
 .
 
 
