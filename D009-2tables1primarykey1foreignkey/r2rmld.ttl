@@ -9,9 +9,9 @@
    a rr:TriplesMap;
         
    rr:logicalTable [ rr:sqlQuery """
-        SELECT Name, COUNT(Sport) as SPORTCOUNT
-        FROM Student
-        GROUP BY Name
+        SELECT "Name", COUNT("Sport") as SPORTCOUNT
+        FROM "Student"
+        GROUP BY "Name"
         """ ];
 	
     rr:subjectMap 
@@ -25,7 +25,7 @@
     [ 
       rr:predicateMap [ rr:constant foaf:name ]; 
       rr:objectMap    [ 
-             rr:column "Name";
+             rr:column "\"Name\"";
              rr:termType rr:Literal;
       ];
     ];

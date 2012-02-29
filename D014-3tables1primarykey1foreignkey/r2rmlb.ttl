@@ -11,34 +11,34 @@
 <TriplesMap1>
     a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
-       Select ('Department' || deptno) AS deptId
-            , deptno
-            , dname
-            , loc
-         from DEPT
+       Select ('Department' || "deptno") AS deptId
+            , "deptno"
+            , "dname"
+            , "loc"
+         from "DEPT"
        """ ];
 
     rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;
                     rr:class ex:dept; 
                     rr:graphMap [ rr:constant ex:DeptGraph; ];
-                    rr:inverseExpression "{deptno} = substr({deptId},length('Department')+1)"];
+                    rr:inverseExpression "{\"deptno\"} = substr({"deptId"},length('Department')+1)"];
 
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant dept:deptno ]; 
-      rr:objectMap    [ rr:column "deptno"; rr:datatype xsd:positiveInteger ]
+      rr:objectMap    [ rr:column "\"deptno\""; rr:datatype xsd:positiveInteger ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant dept:name ]; 
-      rr:objectMap    [ rr:column "dname" ]
+      rr:objectMap    [ rr:column "\"dname\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant dept:location ]; 
-      rr:objectMap    [ rr:column "loc" ]
+      rr:objectMap    [ rr:column "\"loc\"" ]
     ];
 
     rr:predicateObjectMap 
@@ -51,16 +51,16 @@
 <TriplesMap2>
     a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
-       Select ('http://example.com/emp/' || empno) AS empURI
-            , empno
-            , ename
-            , ('http://example.com/emp/job/'|| job) AS jobTypeURI
-            , job
+       Select ('http://example.com/emp/' || "empno") AS empURI
+            , "empno"
+            , "ename"
+            , ('http://example.com/emp/job/'|| "job") AS jobTypeURI
+            , "job"
             , deptno
-            , ('http://example.com/emp/etype/'|| etype) AS empTypeURI
-            , etype
-            , ('http://example.com/graph/'|| job || '/' || etype) AS graphURI
-       from EMP
+            , ('http://example.com/emp/etype/'|| "etype") AS empTypeURI
+            , "etype"
+            , ('http://example.com/graph/'|| "job" || '/' || "etype") AS graphURI
+       from "EMP"
        """ ];
 
     rr:subjectMap [ rr:column "empURI";
@@ -94,32 +94,32 @@
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant emp:empno ]; 
-      rr:objectMap    [ rr:column "empno" ]
+      rr:objectMap    [ rr:column "\"empno\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant emp:name ]; 
-      rr:objectMap    [ rr:column "ename" ]; 
+      rr:objectMap    [ rr:column "\"ename\"" ]; 
       rr:graphMap     [ rr:constant emp:empNameGraph ];
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant emp:job ]; 
-      rr:objectMap    [ rr:column "job" ]
+      rr:objectMap    [ rr:column "\"job\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant emp:deptNum ]; 
-      rr:objectMap    [ rr:column "deptno" ]
+      rr:objectMap    [ rr:column "\"deptno\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant emp:etype ]; 
-      rr:objectMap    [ rr:column "etype" ]
+      rr:objectMap    [ rr:column "\"etype\"" ]
     ];
 
     rr:predicateObjectMap [
@@ -127,8 +127,8 @@
       rr:objectMap    [
         rr:parentTriplesMap <TriplesMap1>;
         rr:joinCondition [
-          rr:child "deptno";
-          rr:parent "deptno";
+          rr:child "\"deptno\"";
+          rr:parent "\"deptno\"";
         ];
       ];
     ]

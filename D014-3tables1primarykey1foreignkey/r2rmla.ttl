@@ -13,30 +13,30 @@
             , "deptno"
             , "dname"
             , "loc"
-         from DEPT
+         from "DEPT"
        """ ];
 
-    rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;
+    rr:subjectMap [ rr:column "\"deptId\""; rr:termType rr:BlankNode;
                     rr:class ex:dept; 
                     rr:graphMap [ rr:graph ex:DeptGraph; ];
-                    rr:inverseExpression "{deptno} = substr({deptId},length('Department')+1)"];
+                    rr:inverseExpression "{\"deptno\"} = substr({\"deptId\"},length('Department')+1)"];
 
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant dept:deptno ]; 
-      rr:objectMap    [ rr:column "deptno"; rr:datatype xsd:positiveInteger ]
+      rr:objectMap    [ rr:column "\"deptno\""; rr:datatype xsd:positiveInteger ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant dept:name ]; 
-      rr:objectMap    [ rr:column "dname" ]
+      rr:objectMap    [ rr:column "\"dname\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicateMap [ rr:constant dept:location ]; 
-      rr:objectMap    [ rr:column "loc" ]
+      rr:objectMap    [ rr:column "\"loc\"" ]
     ];
 
     rr:predicateObjectMap 

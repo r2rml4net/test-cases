@@ -8,11 +8,11 @@
 <TriplesMap1>
     a rr:TriplesMap;
         
-	rr:logicalTable [ rr:tableName  "Student" ];
+	rr:logicalTable [ rr:tableName  "\"Student\"" ];
 	
     rr:subjectMap 
     [ 
-        rr:template "http://example.com/resource/student_{ID}";
+        rr:template "http://example.com/resource/student_{\"ID\"}";
         rr:termType rr:IRI;
         rr:class <http://example.com/ontology/Student>;
     ]; 
@@ -21,7 +21,7 @@
     [ 
       rr:predicateMap [ rr:constant foaf:name ]; 
       rr:objectMap    [ 
-             rr:column "Name";
+             rr:column "\"Name\"";
              rr:termType rr:Literal;
       ];
     ];
@@ -32,8 +32,8 @@
       rr:objectMap    [ 
            rr:parentTriplesMap <TriplesMap2>;
            rr:joinCondition [
-				rr:child "Sport" ;
-				rr:parent "ID" ;
+				rr:child "\"Sport\"" ;
+				rr:parent "\"ID\"" ;
 		   ]
       ];
     ];
@@ -42,11 +42,11 @@
 <TriplesMap2>
     a rr:TriplesMap;
 		
-	rr:logicalTable [ rr:tableName  "Sport" ];
+	rr:logicalTable [ rr:tableName  "\"Sport\"" ];
 
     rr:subjectMap 
     [ 
-        rr:template "http://example.com/resource/sport_{ID}";
+        rr:template "http://example.com/resource/sport_{\"ID\"}";
         rr:termType rr:IRI;
         rr:class <http://example.com/ontology/Sport>;
     ]; 
@@ -55,7 +55,7 @@
     [ 
       rr:predicateMap [ rr:constant rdfs:label ]; 
       rr:objectMap    [ 
-             rr:column "Name"; 
+             rr:column "\"Name\""; 
              rr:termType rr:Literal;
       ];
     ];

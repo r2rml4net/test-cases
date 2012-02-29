@@ -22,20 +22,20 @@
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant ex:id ]; 
-      rr:objectMap    [ rr:column "ID"; rr:datatype xsd:integer ]
+      rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant foaf:firstName ]; 
-      rr:objectMap    [ rr:column "FirstName";
+      rr:objectMap    [ rr:column "\"FirstName\"";
 						rr:termType rr:Literal ]
     ];
 
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant foaf:lastName ]; 
-      rr:objectMap    [ rr:column "LastName";
+      rr:objectMap    [ rr:column "\"LastName\"";
 						rr:termType rr:Literal ]
     ]
     .

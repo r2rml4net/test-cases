@@ -7,26 +7,26 @@
 <TriplesMap1>
      a rr:TriplesMap;
 
-     rr:logicalTable [ rr:tableName "Student" ];
+     rr:logicalTable [ rr:tableName "\"Student\"" ];
 
-    rr:subjectMap [ rr:template "http://example.com/Student{ID}{FirstName}{LastName}";
+    rr:subjectMap [ rr:template "http://example.com/Student{\"ID\"}{\"FirstName\"}{\"LastName\"}";
                     rr:class foaf:Person  ];
 	
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant ex:id ]; 
-      rr:objectMap    [ rr:column "ID"; rr:datatype xsd:integer ]
+      rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant foaf:firstName ]; 
-      rr:objectMap    [ rr:column "FirstName" ]
+      rr:objectMap    [ rr:column "\"FirstName\"" ]
     ];
 
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant foaf:lastName ]; 
-      rr:objectMap    [ rr:column "LastName" ]
+      rr:objectMap    [ rr:column "\"LastName\"" ]
     ]
     .

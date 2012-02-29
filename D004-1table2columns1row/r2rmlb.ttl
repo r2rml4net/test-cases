@@ -8,9 +8,9 @@
     a rr:TriplesMap;
 
       rr:logicalTable [ rr:sqlQuery """
-       Select ('Student' || Student) AS StudentId,
-				Student
-         from Student_Sport
+       SELECT ('Student' || "Student") AS StudentId,
+				"Student"
+         FROM "Student_Sport"
        """;
 	   ] ;
 
@@ -20,7 +20,7 @@
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant foaf:name ]; 
-      rr:objectMap    [ rr:column "Student" ]
+      rr:objectMap    [ rr:column "\"Student\"" ]
     ]
     .
 
@@ -28,9 +28,9 @@
     a rr:TriplesMap;
 
       rr:logicalTable [ rr:sqlQuery """
-       Select ('Sport' || Sport) AS SportId,
-			Sport
-         from Student_Sport
+       SELECT ('Sport' || "Sport") AS SportId,
+			"Sport"
+         FROM "Student_Sport"
        """;
 	  ];
 
@@ -40,6 +40,6 @@
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant foaf:name ]; 
-      rr:objectMap    [ rr:column "Sport" ]
+      rr:objectMap    [ rr:column "\"Sport\"" ]
     ]
 	.

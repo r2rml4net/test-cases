@@ -7,16 +7,16 @@
 <TriplesMap1>
     a rr:TriplesMap;
 
-	rr:logicalTable [ rr:tableName  "IOUs" ];
+	rr:logicalTable [ rr:tableName  "\"IOUs\"" ];
 	
     rr:subjectMap [
-            rr:template "{fname}_{lname}_{amount}"; 
+            rr:template "{\"fname\"}_{\"lname\"}_{\"amount\"}"; 
             rr:termType rr:BlankNode;
             rr:class ex:IOU; 
       ];
 
     rr:subjectMap [
-            rr:template "{amount}_{fname}_{lname}"; 
+            rr:template "{\"amount\"}_{\"fname\"}_{\"lname\"}"; 
             rr:termType rr:BlankNode;
             rr:class ex:IOU; 
       ];
@@ -25,7 +25,7 @@
     [ 
       rr:predicateMap [ rr:constant foaf:name ]; 
       rr:objectMap    [ 
-            rr:template "{fname} {lname}";
+            rr:template "{\"fname\"} {\"lname\"}";
             rr:termType rr:Literal ;
       ]
     ];
@@ -34,7 +34,7 @@
     [ 
       rr:predicateMap [ rr:constant ex:amount ]; 
       rr:objectMap    [ 
-            rr:column "amount";
+            rr:column "\"amount\"";
             rr:termType rr:Literal ;
             rr:datatype xsd:float ;
       ]
