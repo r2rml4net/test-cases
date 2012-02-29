@@ -7,10 +7,10 @@
 <TriplesMap1>
     a rr:TriplesMap;
 
-	rr:logicalTable [ rr:tableName  "IOUs" ]; 
+	rr:logicalTable [ rr:tableName  "\"IOUs\"" ]; 
 	
     rr:subjectMap [
-            rr:template "{fname}_{lname}"; 
+            rr:template "{\"fname\"}_{\"lname\"}"; 
             rr:termType rr:BlankNode ;
             rr:class ex:IOU; 
       ];
@@ -19,7 +19,7 @@
     [ 
       rr:predicateMap [ rr:constant foaf:name ]; 
       rr:objectMap    [ 
-            rr:template "{fname} {lname}";
+            rr:template "{\"fname\"} {\"lname\"}";
             rr:termType rr:Literal ;
       ]
     ];
@@ -27,10 +27,10 @@
 <TriplesMap2>
     a rr:TriplesMap;
 	
-	rr:logicalTable [ rr:tableName  "Lives" ]; 
+	rr:logicalTable [ rr:tableName  "\"Lives\"" ]; 
 
     rr:subjectMap [
-            rr:template "{fname}_{lname}"; 
+            rr:template "{\"fname\"}_{\"lname\"}"; 
             rr:termType rr:BlankNode;
             rr:class ex:IOU; 
       ];
@@ -39,7 +39,7 @@
     [ 
       rr:predicateMap [ rr:constant ex:city ]; 
       rr:objectMap    [ 
-            rr:column "city";
+            rr:column "\"city\"";
             rr:termType rr:Literal ; 
       ]
     ];

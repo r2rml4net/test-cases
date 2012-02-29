@@ -11,15 +11,15 @@
 	a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
 
-        SELECT *, (CASE JOB
+        SELECT *, (CASE "job"
             WHEN 'CLERK' THEN 'general-office'
             WHEN 'NIGHTGUARD' THEN 'security'
             WHEN 'ENGINEER' THEN 'engineering'
-        END) ROLE FROM EMP
+        END) ROLE FROM "EMP"
 
         """ ];
     rr:subjectMap [
-        rr:template "http://data.example.com/employee/{EMPNO}";
+        rr:template "http://data.example.com/employee/{\"empno\"}";
     ];
     rr:predicateObjectMap [
         rr:predicate ex:role;
