@@ -8,6 +8,7 @@
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
 <TriplesMap4>
+	a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
 
         SELECT *, (CASE JOB
