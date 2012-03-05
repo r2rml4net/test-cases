@@ -8,7 +8,7 @@
 <Patient/ID-10> <Patient#BirthDate> "1981-10-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 <Patient/ID-10> <Patient#EntranceDate> "2009-10-10 12:12:22"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <Patient/ID-10> <Patient#PaidInAdvance> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<Patient/ID-10> <Patient#Photo> "eILK"^^<http://www.w3.org/2001/XMLSchema#base64Binary> .
+<Patient/ID-10> <Patient#Photo> "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="^^<http://www.w3.org/2001/XMLSchema#base64Binary> .
 <Patient/ID-11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <Patient> .
 <Patient/ID-11> <Patient#ID> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <Patient/ID-11> <Patient#FirstName> "Rachel" .
@@ -19,7 +19,7 @@
 <Patient/ID-11> <Patient#BirthDate> "1982-11-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <Patient/ID-11> <Patient#EntranceDate> "2008-11-12 09:45:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <Patient/ID-11> <Patient#PaidInAdvance> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<Patient/ID-11> <Patient#Photo> "utH1"^^<http://www.w3.org/2001/XMLSchema#base64Binary> .
+<Patient/ID-11> <Patient#Photo> "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P5//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="^^<http://www.w3.org/2001/XMLSchema#base64Binary> .
 <Patient/ID-12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <Patient> .
 <Patient/ID-12> <Patient#ID> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <Patient/ID-12> <Patient#FirstName> "Chandler" .
@@ -30,4 +30,4 @@
 <Patient/ID-12> <Patient#BirthDate> "1978-04-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <Patient/ID-12> <Patient#EntranceDate> "2007-03-12 02:13:14"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <Patient/ID-12> <Patient#PaidInAdvance> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<Patient/ID-12> <Patient#Photo> "0bfl+w=="^^<http://www.w3.org/2001/XMLSchema#base64Binary> .
+<Patient/ID-12> <Patient#Photo> "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P5//6/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="^^<http://www.w3.org/2001/XMLSchema#base64Binary> .

@@ -22,7 +22,7 @@
     rr:predicateObjectMap
     [ 
       rr:predicate ex:photo;
-      rr:objectMap    [ rr:column "\"Photo\""; rr:datatype xsd:base64Binary ]
+      rr:objectMap [ rr:template "data:image/png;base64,{\"Photo\"}"; ];
     ];
 
     .
