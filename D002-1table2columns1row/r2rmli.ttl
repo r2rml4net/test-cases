@@ -9,25 +9,16 @@
     
     rr:logicalTable [ 
                      rr:sqlQuery """
-                       Select ('Student' || "ID" ) AS StudentId
-                            , "ID"
-                            , "Name"
-                         from "Student"
+                       SELECT "ID",
+                              "Name"
+                         FROM "Student"
                        """;
 					   
 			rr:sqlVersion rr:SQL2008 				   
 					   
                        ];
 	
-	
-
-    rr:subjectMap [ rr:column "StudentId"; rr:termType rr:BlankNode; rr:class foaf:Person ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicateMap [ rr:constant ex:id ]; 
-      rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
-    ];
+    rr:subjectMap [ rr:template "http://example.com/{\"ID\"}/{\"Name\"}";  ];
 
     rr:predicateObjectMap
     [ 

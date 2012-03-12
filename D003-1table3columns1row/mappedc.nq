@@ -1,4 +1,1 @@
-_:Student10VenusWilliams <http://xmlns.com/foaf/0.1/lastName> "Williams" .
-_:Student10VenusWilliams <http://xmlns.com/foaf/0.1/firstName> "Venus" .
-_:Student10VenusWilliams <http://example.com/id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
-
+<http://example.com/Student10> <http://xmlns.com/foaf/0.1/name> "Venus Williams" .

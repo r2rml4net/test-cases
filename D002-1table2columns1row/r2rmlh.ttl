@@ -17,17 +17,12 @@
                        """
                        ];
 
-    rr:subjectMap [ rr:column "StudentId"; rr:termType rr:BlankNode; rr:class foaf:Person ];
+    rr:subjectMap [ rr:column "StudentId"; ];
 
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant ex:id ]; 
-      rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
+      rr:objectMap    [ rr:column "\"ID\""; ]
     ];
 
-    rr:predicateObjectMap
-    [ 
-      rr:predicateMap [ rr:constant foaf:name ]; 
-      rr:objectMap    [ rr:column "\"Name\"" ]
-    ]
     .
