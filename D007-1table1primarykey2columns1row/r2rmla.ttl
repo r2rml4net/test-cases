@@ -12,25 +12,25 @@
 	rr:logicalTable [ rr:tableName "\"Student\"" ];
 
     rr:subjectMap [ rr:template "http://example.com/Student{\"ID\"}{\"Name\"}"; 
-					rr:graphMap [ rr:constant ex:PersonGraph; ]
+					rr:graph	ex:PersonGraph; 
 	];
 	
     rr:predicateObjectMap
     [ 
-		rr:predicateMap [ rr:constant rdf:type; ];
-		rr:objectMap [ rr:constant foaf:Person; ]
+		rr:predicate	rdf:type ;
+		rr:object		foaf:Person; 
 	];
 	
     rr:predicateObjectMap
     [ 
-		rr:predicateMap [ rr:constant ex:id; ];
+		rr:predicate	ex:id ;
 		rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:firstName; ];
-      rr:objectMap    [ rr:column "\"Name\"" ]
+      rr:predicate		foaf:firstName ;
+      rr:objectMap		[ rr:column "\"Name\"" ]
     ]
 
     .

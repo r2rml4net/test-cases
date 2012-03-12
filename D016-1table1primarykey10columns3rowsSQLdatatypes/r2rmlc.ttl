@@ -15,20 +15,20 @@
 	
     rr:predicateObjectMap
     [ 
-		rr:predicate rdf:type;
-		rr:object foaf:Person;
+		rr:predicate	rdf:type;
+		rr:object		foaf:Person;
 	];
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate ex:birthdate;
-      rr:objectMap    [ rr:column "\"BirthDate\""; rr:datatype xsd:date ]
+      rr:predicate		ex:birthdate;
+      rr:objectMap		[ rr:column "\"BirthDate\""; rr:datatype xsd:date ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicate ex:entrancedate;
-      rr:objectMap    [ rr:column "\"EntranceDate\""; rr:datatype xsd:dateTime ]
+      rr:predicate		ex:entrancedate;
+      rr:objectMap		[ rr:column "\"EntranceDate\""; rr:datatype xsd:dateTime ]
     ];
 
     .

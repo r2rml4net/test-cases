@@ -12,40 +12,40 @@
 <TriplesMap1>
     a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
-       Select ('Department' || "deptno") AS deptId
+       SELECT ('Department' || "deptno") AS deptId
             , "deptno"
             , "dname"
             , "loc"
-         from "DEPT"
+         FROM "DEPT"
        """ ];
 
     rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;
                     rr:class ex:dept; 
-                    rr:graphMap [ rr:constant ex:DeptGraph; ];
+                    rr:graph	ex:DeptGraph ;
                     rr:inverseExpression "{\"deptno\"} = substr({deptId},length('Department')+1)"];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant dept:deptno ]; 
+      rr:predicate		dept:deptno ; 
       rr:objectMap    [ rr:column "\"deptno\""; rr:datatype xsd:positiveInteger ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant dept:name ]; 
+      rr:predicate		dept:name ; 
       rr:objectMap    [ rr:column "\"dname\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant dept:location ]; 
+      rr:predicate		dept:location ; 
       rr:objectMap    [ rr:column "\"loc\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant dept:COMPANY ]; 
-      rr:objectMap    [ rr:constant "EXAMPLE Corporation" ]
+      rr:predicate		dept:COMPANY ; 
+      rr:object			"EXAMPLE Corporation" 
     ]
 .
 
@@ -61,61 +61,61 @@
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant emp:jobtype ]; 
+      rr:predicate		emp:jobtype ; 
       rr:objectMap    [ rr:template "http://example.com/emp/job/{\"job\"}" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant rdf:type ]; 
+      rr:predicate		rdf:type ; 
       rr:objectMap    [ rr:template "http://example.com/emp/job/{\"job\"}" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant emp:emptype ]; 
+      rr:predicate		emp:emptype ; 
       rr:objectMap    [ rr:template "http://example.com/emp/etype/{\"etype\"}" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant rdf:type ]; 
+      rr:predicate		rdf:type ; 
       rr:objectMap    [ rr:template "http://example.com/emp/etype/{\"etype\"}" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant emp:empno ]; 
+      rr:predicate		emp:empno ; 
       rr:objectMap    [ rr:column "\"empno\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant emp:name ]; 
-      rr:objectMap    [ rr:column "\"ename\"" ]; 
-      rr:graphMap     [ rr:constant emp:empNameGraph ];
+      rr:predicate		emp:name ; 
+      rr:objectMap		[ rr:column "\"ename\"" ]; 
+      rr:graph			emp:empNameGraph ;
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant emp:job ]; 
+      rr:predicate		emp:job ; 
       rr:objectMap    [ rr:column "\"job\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant emp:deptNum ]; 
+      rr:predicate		emp:deptNum ; 
       rr:objectMap    [ rr:column "\"deptno\"" ]
     ];
 
     rr:predicateObjectMap 
     [ 
-      rr:predicateMap [ rr:constant emp:etype ]; 
+      rr:predicate		emp:etype ; 
       rr:objectMap    [ rr:column "\"etype\"" ]
     ];
 
     rr:predicateObjectMap [
-      rr:predicateMap [ rr:constant emp:c_ref_deptno ];
+      rr:predicate		emp:c_ref_deptno ;
       rr:objectMap    [
         rr:parentTriplesMap <TriplesMap1>;
         rr:joinCondition [

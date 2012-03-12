@@ -14,19 +14,19 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:id ]; 
-      rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
+      rr:predicate		ex:id ; 
+      rr:objectMap		[ rr:column "\"ID\""; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:firstName ]; 
-      rr:objectMap    [ rr:column "\"FirstName\"" ]
+      rr:predicate		foaf:firstName ; 
+      rr:objectMap		[ rr:column "\"FirstName\"" ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:lastName ]; 
-      rr:objectMap    [ rr:column "\"LastName\"" ]
+      rr:predicate		foaf:lastName ; 
+      rr:objectMap		[ rr:column "\"LastName\"" ]
     ]
     .

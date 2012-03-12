@@ -15,22 +15,22 @@
         rr:template "http://example.com/resource/student_{\"ID\"}";
         rr:termType rr:IRI;
         rr:class <http://example.com/ontology/Student>;
-        rr:graphMap [ rr:constant <http://example.com/graph/students> ] ;
+        rr:graph	<http://example.com/graph/students> ;
     ]; 
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name ]; 
+      rr:predicate		foaf:name ; 
       rr:objectMap    [ 
              rr:column "\"Name\"";
              rr:termType rr:Literal;
       ];
-      rr:graphMap [ rr:constant <http://example.com/graph/students> ];
+      rr:graph	<http://example.com/graph/students> ;
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant <http://example.com/ontology/practises> ]; 
+      rr:predicate		<http://example.com/ontology/practises> ; 
       rr:objectMap    [ 
            rr:parentTriplesMap <TriplesMap2>;
            rr:joinCondition [
@@ -38,7 +38,7 @@
 				rr:parent "\"ID\"" ;
 		   ]
       ];
-      rr:graphMap [ rr:constant <http://example.com/graph/practise> ];
+      rr:graph	<http://example.com/graph/practise> ;
     ];
     .
 
@@ -53,12 +53,12 @@
         rr:template "http://example.com/resource/sport_{\"ID\"}";
         rr:termType rr:IRI;
         rr:class <http://example.com/ontology/Sport>;
-        rr:graphMap [ rr:constant <http://example.com/graph/sports> ];
+        rr:graph <http://example.com/graph/sports> ;
     ]; 
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant rdfs:label ]; 
+      rr:predicate	rdfs:label ; 
       rr:objectMap    [ 
              rr:column "\"Name\""; 
              rr:termType rr:Literal;

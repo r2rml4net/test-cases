@@ -53,6 +53,7 @@
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d002> ;
 	rdb2rdftest:hasExpectedOutput false ;
+	rdb2rdftest:failMessage "non-conforming R2RML mapping";
 	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
 .
 
@@ -76,6 +77,7 @@
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d002> ;
 	rdb2rdftest:hasExpectedOutput false ;
+	rdb2rdftest:failMessage "non-conforming R2RML mapping";	
 	rdb2rdftest:mappingDocument "r2rmle.ttl" ;
 .
 
@@ -99,6 +101,7 @@
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d002> ;
 	rdb2rdftest:hasExpectedOutput false ;
+	rdb2rdftest:failMessage "non-conforming R2RML mapping";	
 	rdb2rdftest:mappingDocument "r2rmlg.ttl" ;
 .
 

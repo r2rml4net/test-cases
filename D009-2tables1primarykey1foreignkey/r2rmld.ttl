@@ -23,7 +23,7 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name ]; 
+      rr:predicate		foaf:name ; 
       rr:objectMap    [ 
              rr:column "\"Name\"";
              rr:termType rr:Literal;
@@ -32,7 +32,7 @@
 
    rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:numSport ]; 
+      rr:predicate		ex:numSport ; 
       rr:objectMap    [ 
              rr:column "SPORTCOUNT";
              rr:datatype xsd:integer;
