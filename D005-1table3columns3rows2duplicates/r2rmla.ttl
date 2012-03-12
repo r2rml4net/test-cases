@@ -14,8 +14,8 @@
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:owes ]; 
-      rr:objectMap    [ rr:column "\"amount\""; ]
+      rr:predicate		ex:owes ; 
+      rr:objectMap		[ rr:column "\"amount\""; ]
     ];
 
     .

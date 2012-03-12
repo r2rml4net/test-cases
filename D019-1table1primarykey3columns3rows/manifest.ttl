@@ -30,5 +30,6 @@
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d019> ;
 	rdb2rdftest:hasExpectedOutput false ;
+	rdb2rdftest:failMessage "Conforming R2RML mapping with data error";	
 	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;	
 .

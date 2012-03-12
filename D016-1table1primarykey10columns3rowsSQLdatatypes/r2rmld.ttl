@@ -15,14 +15,14 @@
 	
     rr:predicateObjectMap
     [ 
-		rr:predicate rdf:type;
-		rr:object foaf:Person;
+		rr:predicate	rdf:type;
+		rr:object		foaf:Person;
 	];
 
     rr:predicateObjectMap
     [ 
-      rr:predicate ex:paid;
-      rr:objectMap    [ rr:column "\"PaidInAdvance\""; rr:datatype xsd:boolean ]
+      rr:predicate		ex:paid;
+      rr:objectMap		[ rr:column "\"PaidInAdvance\""; rr:datatype xsd:boolean ]
     ];
 
     .

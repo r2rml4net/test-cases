@@ -19,8 +19,8 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate rdfs:label;
-      rr:objectMap    [ rr:column "\"Name\""; rr:language "english" ]
+      rr:predicate		rdfs:label;
+      rr:objectMap		[ rr:column "\"Name\""; rr:language "english" ]
     ]
     .
 	
@@ -37,7 +37,7 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate rdfs:label;
-      rr:objectMap    [ rr:column "\"Name\""; rr:language "spanish" ]
+      rr:predicate		rdfs:label;
+      rr:objectMap		[ rr:column "\"Name\""; rr:language "spanish" ]
     ]
     .	

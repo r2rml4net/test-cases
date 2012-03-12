@@ -19,7 +19,7 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name ]; 
+      rr:predicate	foaf:name ; 
       rr:objectMap    [ 
              rr:column "\"Name\"";
              rr:termType rr:Literal;
@@ -28,7 +28,7 @@
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant <http://example.com/ontology/practises> ]; 
+      rr:predicate	<http://example.com/ontology/practises> ; 
       rr:objectMap    [ 
            rr:parentTriplesMap <TriplesMap2>;
            rr:joinCondition [
@@ -53,7 +53,7 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant rdfs:label ]; 
+      rr:predicate		rdfs:label ; 
       rr:objectMap    [ 
              rr:column "\"Name\""; 
              rr:termType rr:Literal;

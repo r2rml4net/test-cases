@@ -14,8 +14,8 @@
 	rr:subjectMap [ rr:template "http://example.com/{\"Sport\"}"; ];
 
 	rr:predicateObjectMap [
-		rr:predicateMap [rr:constant rdf:type ];
-		rr:objectMap [rr:constant activity:Sport ]
+		rr:predicate	rdf:type ;
+		rr:object		activity:Sport ;
 	];
 .
 
@@ -29,26 +29,26 @@
 	
     rr:predicateObjectMap
     [ 
-		rr:predicateMap [ rr:constant rdf:type; ];
-		rr:objectMap [ rr:constant foaf:Person; ]
+		rr:predicate	rdf:type ;
+		rr:object		foaf:Person ;
 	];
 		
     rr:predicateObjectMap
     [ 
-		rr:predicateMap [ rr:constant ex:id; ];
+		rr:predicate	ex:id ;
 		rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name; ];
-      rr:objectMap    [ rr:column "\"Name\"" ]
+      rr:predicate		foaf:name ;
+      rr:objectMap		[ rr:column "\"Name\"" ]
     ];
  
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:Sport; ];
-      rr:objectMap    <RefObjectMap1>
+      rr:predicate		ex:Sport ;
+      rr:objectMap		<RefObjectMap1>
     ]
     
  .

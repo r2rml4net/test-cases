@@ -16,26 +16,26 @@
 	
     rr:predicateObjectMap
     [ 
-		rr:predicateMap [ rr:constant rdf:type; ];
-		rr:objectMap [ rr:constant foaf:Person; ]
+		rr:predicate	rdf:type ;
+		rr:object		foaf:Person ; 
 	];
 	
     rr:predicateObjectMap
     [ 
-		rr:predicateMap [ rr:constant ex:id; ];
+		rr:predicate	ex:id ;
 		rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name; ];
-      rr:predicateMap [ rr:constant ex:name; ];
+      rr:predicate		foaf:name ;
+      rr:predicate		ex:name ;
       rr:objectMap    [ rr:column "\"Name\"" ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:Sport; ];
+      rr:predicate		ex:Sport ;
       rr:objectMap    [ rr:column "\"Sport\"" ]
     ]
 	

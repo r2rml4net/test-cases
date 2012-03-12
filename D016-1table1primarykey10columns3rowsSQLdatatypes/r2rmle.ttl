@@ -15,14 +15,14 @@
 	
     rr:predicateObjectMap
     [ 
-		rr:predicate rdf:type;
-		rr:object foaf:Person;
+		rr:predicate	rdf:type;
+		rr:object		foaf:Person;
 	];
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate ex:photo;
-      rr:objectMap [ rr:template "data:image/png;base64,{\"Photo\"}"; ];
+      rr:predicate	ex:photo;
+      rr:objectMap	[ rr:template "data:image/png;base64,{\"Photo\"}"; ];
     ];
 
     .

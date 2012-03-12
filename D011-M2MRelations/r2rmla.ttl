@@ -22,25 +22,25 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:id ]; 
+      rr:predicate		ex:id ; 
       rr:objectMap    [ rr:column "ID"; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:firstName ]; 
+      rr:predicate		foaf:firstName ; 
       rr:objectMap    [ rr:column "FirstName" ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:lastName ]; 
+      rr:predicate		foaf:lastName ; 
       rr:objectMap    [ rr:column "LastName" ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:plays ]; 
+      rr:predicate		ex:plays ; 
       rr:objectMap    [ rr:template "http://example.com/{Sport_ID}{Description}" ]
     ]
     .
@@ -57,13 +57,13 @@
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:id ]; 
+      rr:predicate		ex:id ; 
       rr:objectMap    [ rr:column "ID"; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:description ]; 
+      rr:predicate		ex:description ; 
       rr:objectMap    [ rr:column "Description" ]
     ]
     .

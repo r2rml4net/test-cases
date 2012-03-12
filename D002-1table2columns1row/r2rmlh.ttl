@@ -21,8 +21,8 @@
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:id ]; 
-      rr:objectMap    [ rr:column "\"ID\""; ]
+      rr:predicate		ex:id ; 
+      rr:objectMap		[ rr:column "\"ID\""; ]
     ];
 
     .

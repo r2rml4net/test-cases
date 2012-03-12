@@ -17,7 +17,7 @@
 	rr:subjectMap [ rr:column "\"FirstName\"" ]; 
 	rr:predicateObjectMap
     [ 
-      rr:predicate foaf:name; 
-      rr:objectMap    [ rr:column "\"FirstName\"" ];
+      rr:predicate		foaf:name; 
+      rr:objectMap		[ rr:column "\"FirstName\"" ];
     ];
 .

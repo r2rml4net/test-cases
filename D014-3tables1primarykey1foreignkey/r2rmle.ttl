@@ -10,15 +10,15 @@
 <TriplesMap3>
     a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
-      Select ('http://example.com/emp/' || "id") AS empId
+      SELECT ('http://example.com/emp/' || "id") AS empId
            , ('http://example.com/emp/likes/' || "likeType") AS empLikes
            , "likedObj"
-        from "LIKES"
+        FROM "LIKES"
       """ ];
 
     rr:subjectMap [
       rr:column "empId";
-      rr:graphMap [ rr:constant ex:LikesGraph ];
+      rr:graph	ex:LikesGraph ;
     ];
 
     rr:predicateObjectMap 

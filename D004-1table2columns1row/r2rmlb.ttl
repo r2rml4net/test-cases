@@ -19,8 +19,8 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name ]; 
-      rr:objectMap    [ rr:column "\"Student\"" ]
+      rr:predicate		foaf:name ; 
+      rr:objectMap		[ rr:column "\"Student\"" ]
     ]
     .
 
@@ -39,7 +39,7 @@
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name ]; 
-      rr:objectMap    [ rr:column "\"Sport\"" ]
+      rr:predicate		foaf:name ; 
+      rr:objectMap		[ rr:column "\"Sport\"" ]
     ]
 	.

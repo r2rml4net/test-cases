@@ -14,13 +14,13 @@
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant ex:id ]; 
-      rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
+      rr:predicate		ex:id ; 
+      rr:objectMap		[ rr:column "\"ID\""; rr:datatype xsd:integer ]
     ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name ]; 
-      rr:objectMap    [ rr:column "\"Name\"" ]
+      rr:predicate		foaf:name ; 
+      rr:objectMap		[ rr:column "\"Name\"" ]
 	]
     .
