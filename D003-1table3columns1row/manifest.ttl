@@ -34,10 +34,10 @@
 .
 
 <tc0003b> a rdb2rdftest:R2RML ;	
-	dcterms:title "Three columns mapping, using \"template\" feature" ; 
+	dcterms:title "Three columns mapping, concatenation of columns to produce literal" ; 
 	dcterms:identifier "R2RMLTC0003b" ;
-	test:purpose "Tests: (1) three column mapping; (2) one column to one property and (3) from template feature" ;
-	test:specificationReference "#from-template"  ;
+	test:purpose "Tests: (1) three column mapping; and (2) concatenation of columns to produce literal" ;
+	test:specificationReference "#r2rml-views"  ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d003> ;
 	rdb2rdftest:output "mappedb.nq" ;
@@ -46,10 +46,10 @@
 .
 
 <tc0003c> a rdb2rdftest:R2RML ;	
-	dcterms:title "Three columns mapping, using rr:termType and rr:Literal" ; 
+	dcterms:title "Three columns mapping, using rr:template to produce literal" ; 
 	dcterms:identifier "R2RMLTC0003c" ;
-	test:purpose "Tests rr:termType rr:BlankNode and rr:Literal" ;
-	test:specificationReference "#termtype"  ;
+	test:purpose "Tests: (1) three column mapping; and (2) the use of rr:template to produce literal" ;
+	test:specificationReference "#from-template"  ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d003> ;
 	rdb2rdftest:output "mappedc.nq" ;

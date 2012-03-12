@@ -36,8 +36,8 @@
 <tc0002b> a rdb2rdftest:R2RML ;	
 	dcterms:title "Two columns mapping, generation of a \"BlankNode\" subject" ; 
 	dcterms:identifier "R2RMLTC0002b" ;
-	test:purpose "Tests: (1) two column mapping, no primary key; (2) generation of a \"BlankNode\" subject; (3) one column to one property" ;
-	test:specificationReference "#dfn-r2rml-view" ;
+	test:purpose "Tests: (1) two column mapping, no primary key; (2) generation of a \"BlankNode\" subject by using rr:template; (3) one column to one property" ;
+	test:specificationReference "#termtype" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d002> ;
 	rdb2rdftest:output "mappedb.nq" ;
@@ -46,9 +46,9 @@
 .
 
 <tc0002c> a rdb2rdftest:R2RML ;	
-	dcterms:title "Two columns mapping, an invalid SQL identifier" ; 
+	dcterms:title "Two columns mapping, an undefined SQL identifier" ; 
 	dcterms:identifier "R2RMLTC0002c" ;
-	test:purpose "Tests the presence of an invalid SQL identifier" ;
+	test:purpose "Tests the presence of an undefined SQL identifier" ;
 	test:specificationReference "#dfn-sql-identifier" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d002> ;
@@ -57,10 +57,10 @@
 .
 
 <tc0002d> a rdb2rdftest:R2RML ;	
-	dcterms:title "Two columns mapping, delimited indentifiers" ; 
+	dcterms:title "Two columns mapping, generation of a \"BlankNode\" subject" ; 
 	dcterms:identifier "R2RMLTC0002d" ;
-	test:purpose "Tests the presence delimited identifiers" ;
-	test:specificationReference "#dfn-sql-identifier" ;
+	test:purpose "Tests (1) two column mapping, no primary key; (2) generation of a \"BlankNode\" subject by using a SQL Query that concatenates two columns; (3) one column to one property" ;
+	test:specificationReference "#termtype" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d002> ;
 	rdb2rdftest:hasExpectedOutput true ;
@@ -69,9 +69,9 @@
 .
 
 <tc0002e> a rdb2rdftest:R2RML ;	
-	dcterms:title "Two columns mapping, an invalid rr:tableName" ; 
+	dcterms:title "Two columns mapping, an undefined rr:tableName" ; 
 	dcterms:identifier "R2RMLTC0002e" ;
-	test:purpose "Tests the presence of an invalid rr:tableName" ;
+	test:purpose "Tests the presence of an undefined rr:tableName" ;
 	test:specificationReference "#dfn-sql-identifier" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d002> ;

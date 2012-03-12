@@ -22,10 +22,10 @@
 .
 
 <tc0006a> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping using rr:template" ; 
+	dcterms:title "Long form of R2RML by using rr:constant" ; 
 	dcterms:identifier "R2RMLTC0006a" ;
 	test:purpose "Tests one column mapping with one primary key and rr:template" ;
-	test:specificationReference "#dfn-template-valued-term-map" ;
+	test:specificationReference "#constant" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d006> ;
 	rdb2rdftest:output "mappeda.nq" ;
