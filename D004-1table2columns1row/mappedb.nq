@@ -1,4 +1,0 @@
-_:SportTennis <http://xmlns.com/foaf/0.1/name> "Tennis" .
-_:SportTennis <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/Sport> .
-_:StudentVenus <http://xmlns.com/foaf/0.1/name> "Venus" .
-_:StudentVenus <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/Student> .
