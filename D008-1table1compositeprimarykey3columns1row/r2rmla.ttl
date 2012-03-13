@@ -11,8 +11,8 @@
 
 	rr:logicalTable [ rr:tableName "\"Student\"" ];
 
-    rr:subjectMap [ rr:template "http://example.com/Student{\"ID\"}{\"Name\"}"; 
-					rr:graphMap [ rr:template "http://example.com/graph/Student{\"ID\"}{\"Name\"}"; ]
+	rr:subjectMap [ rr:template "http://example.com/Student/{\"ID\"}/{\"Name\"}"; 
+					rr:graphMap [ rr:template "http://example.com/graph/Student/{\"ID\"}/{\"Name\"}"; ]
 	];
 	
     rr:predicateObjectMap
@@ -24,7 +24,7 @@
     rr:predicateObjectMap
     [ 
 		rr:predicate	ex:id ;
-		rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
+		rr:objectMap    [ rr:column "\"ID\"";  ]
     ];
 
     rr:predicateObjectMap

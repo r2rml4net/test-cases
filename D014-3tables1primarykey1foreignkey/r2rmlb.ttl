@@ -11,22 +11,20 @@
 <TriplesMap1>
     a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
-       Select ('Department' || "deptno") AS deptId
+       SELECT ('Department' || "deptno") AS deptId
             , "deptno"
             , "dname"
             , "loc"
-         from "DEPT"
+       FROM "DEPT"
        """ ];
 
     rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;
-                    rr:class ex:dept; 
-                    rr:graph	ex:DeptGraph ;
-                    rr:inverseExpression "{\"deptno\"} = substr({"deptId"},length('Department')+1)"];
+                    rr:inverseExpression "{\"deptno\"} = substr({"deptId"},length('Department')+1)" ];
 
     rr:predicateObjectMap
     [ 
       rr:predicate		dept:deptno ; 
-      rr:objectMap    [ rr:column "\"deptno\""; rr:datatype xsd:positiveInteger ]
+      rr:objectMap    [ rr:column "\"deptno\""; ]
     ];
 
     rr:predicateObjectMap 
@@ -63,10 +61,8 @@
        FROM "EMP"
        """ ];
 
-    rr:subjectMap [ rr:column "empURI";
-                    rr:class ex:emp; 
-                    rr:graphMap [ rr:column "graphURI" ]; ];
-
+    rr:subjectMap [ rr:column "empURI"; ];
+     
     rr:predicateObjectMap 
     [ 
       rr:predicate		emp:jobtype ; 
@@ -101,7 +97,6 @@
     [ 
       rr:predicate		emp:name ; 
       rr:objectMap    [ rr:column "\"ename\"" ]; 
-      rr:graph			emp:empNameGraph ;
     ];
 
     rr:predicateObjectMap 

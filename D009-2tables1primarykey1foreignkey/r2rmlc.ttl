@@ -14,20 +14,12 @@
         GROUP BY "Name"
         """ ];
 	
-    rr:subjectMap 
-    [ 
-        rr:template "http://example.com/resource/student_{\"Name\"}";
-        rr:termType rr:IRI;
-        rr:class <http://example.com/ontology/Student>;
-    ]; 
+    rr:subjectMap [ rr:template "http://example.com/resource/student_{\"Name\"}"; ]; 
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate		foaf:name ; 
-      rr:objectMap    [ 
-             rr:column "\"Name\"";
-             rr:termType rr:Literal;
-      ];
+      rr:predicate	foaf:name ; 
+      rr:objectMap	[ rr:column "\"Name\""; ];
     ];
   .
 

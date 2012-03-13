@@ -22,9 +22,9 @@
 .
 
 <tc0008a> a rdb2rdftest:R2RML ;	
-	dcterms:title "Generation of triples to a target graph" ; 
+	dcterms:title "Generation of triples to a target graph by using rr:graphMap and rr:template" ; 
 	dcterms:identifier "R2RMLTC0008a" ;
-	test:purpose "Test that results of the mapping can be directed to a target graph." ;
+	test:purpose "Test that results of the mapping can be directed to a target graph by using rr:graphMap and rr:template" ;
 	test:specificationReference "#named-graphs" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d008> ;
@@ -46,10 +46,10 @@
 .
 
 <tc0008c> a rdb2rdftest:R2RML ;	
-	dcterms:title "Generation of triples by using multiple predicateMaps referencing to the same logical table" ; 
+	dcterms:title "Generation of triples by using multiple predicateMaps within a rr:predicateObjectMap" ; 
 	dcterms:identifier "R2RMLTC0008c" ;
-	test:purpose "Generation of triples by using multiple predicateMaps referencing to the same logical table" ;
-	test:specificationReference "#dfn-predicate-object-map" ;
+	test:purpose "Tests the generation of triples by using multiple predicateMaps within a rr:predicateObjectMap" ;
+	test:specificationReference "#physical-tables" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d008> ;
 	rdb2rdftest:hasExpectedOutput true ;

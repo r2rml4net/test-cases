@@ -9,11 +9,11 @@
         
 	rr:logicalTable [ rr:tableName "\"Country Info\""; ] ;
 	
-    rr:subjectMap [ rr:template "http://example.com/{\"Country Code\"}{\"Name\"}" ]; 
+	rr:subjectMap [ rr:template "http://example.com/{\"Country Code\"}/{\"Name\"}" ]; 
 	
-    rr:predicateObjectMap
-    [ 
-      rr:predicate		ex:name ; 
-      rr:objectMap    [ rr:column "\"Name\"" ]
+	rr:predicateObjectMap
+	[ 
+		rr:predicate	ex:name ; 
+		rr:objectMap    [ rr:column "\"Name\"" ]
     ]
     .

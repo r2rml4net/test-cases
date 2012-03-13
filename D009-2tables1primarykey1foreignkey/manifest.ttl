@@ -49,7 +49,7 @@
 	dcterms:title "Unamed column in a logical table" ; 
 	dcterms:identifier "R2RMLTC0009c" ;
 	test:purpose "Test a logical table with unamed column." ;
-	test:specificationReference "#dfn-logical-table" ;
+	test:specificationReference "#dfn-sql-query" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d009> ;
 	rdb2rdftest:hasExpectedOutput false ;
@@ -61,7 +61,7 @@
 	dcterms:title "Named column in logical table" ; 
 	dcterms:identifier "R2RMLTC0009d" ;
 	test:purpose "Test a logical table named column." ;
-	test:specificationReference "#dfn-logical-table" ;
+	test:specificationReference "#dfn-sql-query" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d009> ;
 	rdb2rdftest:output "mappedd.nq" ;

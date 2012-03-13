@@ -37,7 +37,7 @@
 	dcterms:title "M to M relation, by using an additional Triples Map" ; 
 	dcterms:identifier "R2RMLTC0011b" ;
 	test:purpose "Tests, M to M relations, by using an additional Triples Map" ;
-	test:specificationReference "#termtype" ;
+	test:specificationReference "#physical-tables" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d011> ;
 	rdb2rdftest:output "mappedb.nq" ;

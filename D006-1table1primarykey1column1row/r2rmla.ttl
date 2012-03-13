@@ -9,11 +9,12 @@
     
     rr:logicalTable [ rr:tableName "\"Student\"" ];
 
-    rr:subjectMap [ rr:template "http://example.com/{\"Name\"}" ]; 
+    rr:subjectMap [ rr:constant ex:BadStudent;  
+    				rr:graphMap [ rr:constant <http://example.com/graph/student> ]; ]; 
 	
     rr:predicateObjectMap
     [ 
-      rr:predicateMap [ rr:constant foaf:name ]; 
-      rr:objectMap    [ rr:column "\"Name\"" ]
+      rr:predicateMap [ rr:constant ex:description ]; 
+      rr:objectMap    [ rr:constant "Bad Student" ]
     ]
     .
