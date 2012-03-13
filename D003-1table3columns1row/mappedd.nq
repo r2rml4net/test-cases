@@ -1,4 +1,0 @@
-<http://example.com/Student10VenusWilliams> <http://example.com/firstName> <http://example.com/data/Venus> .
-<http://example.com/Student10VenusWilliams> <http://example.com/lastName> <http://example.com/data/Williams> .
-<http://example.com/Student10VenusWilliams> <http://example.com/id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
-
