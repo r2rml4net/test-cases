@@ -1,6 +1,4 @@
 _:Bob_Smith_30 <http://example.com/city> "London" .
 _:Bob_Smith_30 <http://xmlns.com/foaf/0.1/name> "Bob Smith" .
-_:Bob_Smith_30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/IOU> .
 _:Sue_Jones_20 <http://example.com/amount> "Madrid" .
 _:Sue_Jones_20 <http://xmlns.com/foaf/0.1/name> "Sue Jones" .
-_:Sue_Jones_20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/IOU> .

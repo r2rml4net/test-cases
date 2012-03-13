@@ -7,22 +7,18 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
-
-
 <TriplesMap1>
     a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
-       SELECT ('Department' || "deptno") AS deptId
+       Select ('Department' || "deptno") AS deptId
             , "deptno"
             , "dname"
             , "loc"
-         FROM "DEPT"
+         from "DEPT"
        """ ];
 
     rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;
-                    rr:class ex:dept; 
-                    rr:graph	ex:DeptGraph ;
-                    rr:inverseExpression "{\"deptno\"} = substr({deptId},length('Department')+1)"];
+                    rr:inverseExpression "{"deptno"} = substr({deptId},length('Department')+1)"];
 
     rr:predicateObjectMap
     [ 
@@ -49,38 +45,46 @@
     ]
 .
 
+
+<jobtypeObjectMap>
+    a rr:ObjectMap;
+    rr:template "http://example.com/emp/job/{\"job\"}"
+    .
+
+<emptypeObjectMap>
+    a rr:ObjectMap;
+    rr:template "http://example.com/emp/etype/{\"etype\"}"
+    .
+
 <TriplesMap2>
     a rr:TriplesMap;
 
     rr:logicalTable [ rr:tableName "\"EMP\"" ];
 
-    rr:subjectMap [ rr:template "http://example.com/emp/{\"empno\"}";
-                    rr:class ex:emp; 
-                    rr:graphMap [ rr:template "http://example.com/graph/{\"job\"}/{\"etype\"}"; ];
-                  ];
+    rr:subjectMap [ rr:template "http://example.com/emp/{\"empno\"}"; ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicate		emp:jobtype ; 
-      rr:objectMap    [ rr:template "http://example.com/emp/job/{\"job\"}" ]
+      rr:objectMap    <jobtypeObjectMap>
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicate		rdf:type ; 
-      rr:objectMap    [ rr:template "http://example.com/emp/job/{\"job\"}" ]
+      rr:objectMap    <jobtypeObjectMap>
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicate		emp:emptype ; 
-      rr:objectMap    [ rr:template "http://example.com/emp/etype/{\"etype\"}" ]
+      rr:objectMap    <emptypeObjectMap>
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicate		rdf:type ; 
-      rr:objectMap    [ rr:template "http://example.com/emp/etype/{\"etype\"}" ]
+      rr:objectMap    <emptypeObjectMap>
     ];
 
     rr:predicateObjectMap 
@@ -92,8 +96,7 @@
     rr:predicateObjectMap 
     [ 
       rr:predicate		emp:name ; 
-      rr:objectMap		[ rr:column "\"ename\"" ]; 
-      rr:graph			emp:empNameGraph ;
+      rr:objectMap    [ rr:column "\"ename\"" ]; 
     ];
 
     rr:predicateObjectMap 

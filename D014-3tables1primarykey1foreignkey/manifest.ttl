@@ -8,7 +8,7 @@
 	dcterms:title "3 tables, one primary key, one foreign key" ;
 	dcterms:identifier "D014-3tables1primarykey1foreignkey" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0014>, <tc0014a>, <tc0014b>, <tc0014c>, <tc0014d>, <tc0014e> ;
+	rdb2rdftest:relatedTestCase <dg0014>, <tc0014a>, <tc0014b>, <tc0014c>, <tc0014d> ;
 .
 
 <dg0014> a rdb2rdftest:DirectMapping ;	
@@ -23,10 +23,10 @@
 .
 
 <tc0014a> a rdb2rdftest:R2RML ;	
-	dcterms:title "three tables, one primary key, one foreign key" ; 
+	dcterms:title "Subjectmap with rr:inverseExpression" ; 
 	dcterms:identifier "R2RMLTC0014a" ;
-	test:purpose "Tests a logicaltable with sqlQuery" ;
-	test:specificationReference "#dfn-graph-map" ;
+	test:purpose "Tests a rr:subjectMap with rr:inverseExpression" ;
+	test:specificationReference "#inverse" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d014> ;
 	rdb2rdftest:hasExpectedOutput true ;
@@ -35,10 +35,10 @@
 .
 
 <tc0014b> a rdb2rdftest:R2RML ;	
-	dcterms:title "three tables, one primary key, one foreign key" ; 
+	dcterms:title "Triplesmaps with rr:inverseExpression and rr:joinCondition" ; 
 	dcterms:identifier "R2RMLTC0014b" ;
-	test:purpose "Mapping specification using SQL-based logical table definition" ;
-	test:specificationReference "#inverse" ;
+	test:purpose "Test two triplesmaps, one with a rr:inverseExpression and the other with a rr:joinCondition for foerign key relations" ;
+	test:specificationReference "#dfn-join-condition" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d014> ;
 	rdb2rdftest:hasExpectedOutput true ;	
@@ -47,9 +47,9 @@
 .
 
 <tc0014c> a rdb2rdftest:R2RML ;	
-	dcterms:title "three tables, one primary key, one foreign key" ; 
+	dcterms:title "Triplesmaps with rr:inverseExpression, rr:joinCondition, and referencing object maps" ; 
 	dcterms:identifier "R2RMLTC0014c" ;
-	test:purpose "Mapping specification using table name based logical table definition" ;
+	test:purpose "Triplesmaps with rr:inverseExpression, rr:joinCondition, and referencing object maps" ;
 	test:specificationReference "#foreign-key" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d014> ;
@@ -61,35 +61,11 @@
 <tc0014d> a rdb2rdftest:R2RML ;	
 	dcterms:title "three tables, one primary key, one foreign key" ; 
 	dcterms:identifier "R2RMLTC0014d" ;
-	test:purpose "Mapping specification referencing object map" ;
-	test:specificationReference "#dfn-referencing-object-map" ;
-	test:reviewStatus test:unreviewed ;
-	rdb2rdftest:database <d014> ;
-	rdb2rdftest:hasExpectedOutput true ;
-	rdb2rdftest:output "mappedd.nq" ;	
-	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
-.
-
-<tc0014e> a rdb2rdftest:R2RML ;	
-	dcterms:title "three tables, one primary key, one foreign key" ; 
-	dcterms:identifier "R2RMLTC0014e" ;
-	test:purpose "Mapping Specification for the LIKES Table" ;
-	test:specificationReference "#dfn-output-dataset" ;
-	test:reviewStatus test:unreviewed ;
-	rdb2rdftest:database <d014> ;
-	rdb2rdftest:hasExpectedOutput true ;
-	rdb2rdftest:output "mappede.nq" ;	
-	rdb2rdftest:mappingDocument "r2rmle.ttl" ;
-.
-
-<tc0014f> a rdb2rdftest:R2RML ;	
-	dcterms:title "Database type codes to IRIs" ; 
-	dcterms:identifier "R2RMLTC0014f" ;
 	test:purpose "Test the translation of database type codes to IRIs" ;
 	test:specificationReference "#example-translationtable" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d014> ;
 	rdb2rdftest:hasExpectedOutput true ;
-	rdb2rdftest:output "mappedf.nq" ;	
-	rdb2rdftest:mappingDocument "r2rmlf.ttl" ;
+	rdb2rdftest:output "mappedd.nq" ;	
+	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
 .

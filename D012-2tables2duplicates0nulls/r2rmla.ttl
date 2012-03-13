@@ -9,16 +9,12 @@
 
 	rr:logicalTable [ rr:tableName  "\"IOUs\"" ];
 	
-    rr:subjectMap [
-            rr:template "{\"fname\"}_{\"lname\"}_{\"amount\"}"; 
-            rr:termType rr:BlankNode;
-            rr:class ex:IOU; 
-      ];
+    rr:subjectMap [ rr:template "{\"fname\"}_{\"lname\"}_{\"amount\"}"; rr:termType rr:BlankNode; ];
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate		foaf:name ; 
-      rr:objectMap    [ 
+      rr:predicate	foaf:name ; 
+      rr:objectMap	[ 
             rr:template "{\"fname\"} {\"lname\"}";
             rr:termType rr:Literal ;
       ]
@@ -29,8 +25,6 @@
       rr:predicate		ex:amount ; 
       rr:objectMap    [ 
             rr:column "\"amount\"";
-            rr:termType rr:Literal ;
-            rr:datatype xsd:float ;
       ]
     ];
 	.

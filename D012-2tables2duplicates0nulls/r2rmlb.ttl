@@ -12,7 +12,6 @@
     rr:subjectMap [
             rr:template "{\"fname\"}_{\"lname\"}"; 
             rr:termType rr:BlankNode ;
-            rr:class ex:IOU; 
       ];
 	
     rr:predicateObjectMap
@@ -32,15 +31,11 @@
     rr:subjectMap [
             rr:template "{\"fname\"}_{\"lname\"}"; 
             rr:termType rr:BlankNode;
-            rr:class ex:IOU; 
       ];
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate		ex:city ; 
-      rr:objectMap    [ 
-            rr:column "\"city\"";
-            rr:termType rr:Literal ; 
-      ]
+      rr:predicate	ex:city ; 
+      rr:objectMap	[ rr:column "\"city\""; ]
     ];
 	.

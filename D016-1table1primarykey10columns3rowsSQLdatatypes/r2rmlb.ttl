@@ -22,13 +22,13 @@
     rr:predicateObjectMap
     [ 
       rr:predicate ex:weight;
-      rr:objectMap    [ rr:column "\"Weight\""; rr:datatype xsd:real ]
+      rr:objectMap    [ rr:column "\"Weight\""; ]
     ];
 
     rr:predicateObjectMap
     [ 
       rr:predicate ex:height;
-      rr:objectMap    [ rr:column "\"Height\""; rr:datatype xsd:float ]
+      rr:objectMap    [ rr:column "\"Height\""; ]
     ];
 
     .

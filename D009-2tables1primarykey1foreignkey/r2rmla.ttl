@@ -10,31 +10,23 @@
         
 	rr:logicalTable [ rr:tableName  "\"Student\"" ];
 	
-    rr:subjectMap 
-    [ 
-        rr:template "http://example.com/resource/student_{\"ID\"}";
-        rr:termType rr:IRI;
-        rr:class <http://example.com/ontology/Student>;
-    ]; 
+    rr:subjectMap [ rr:template "http://example.com/resource/student_{\"ID\"}"; ]; 
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate	foaf:name ; 
-      rr:objectMap    [ 
-             rr:column "\"Name\"";
-             rr:termType rr:Literal;
-      ];
+		rr:predicate	foaf:name ; 
+		rr:objectMap	[ rr:column "\"Name\""; ];
     ];
 
     rr:predicateObjectMap
     [ 
       rr:predicate	<http://example.com/ontology/practises> ; 
-      rr:objectMap    [ 
+      rr:objectMap	[ 
            rr:parentTriplesMap <TriplesMap2>;
            rr:joinCondition [
 				rr:child "\"Sport\"" ;
 				rr:parent "\"ID\"" ;
-		   ]
+			]
       ];
     ];
     .
@@ -44,19 +36,11 @@
 		
 	rr:logicalTable [ rr:tableName  "\"Sport\"" ];
 
-    rr:subjectMap 
-    [ 
-        rr:template "http://example.com/resource/sport_{\"ID\"}";
-        rr:termType rr:IRI;
-        rr:class <http://example.com/ontology/Sport>;
-    ]; 
+    rr:subjectMap [ rr:template "http://example.com/resource/sport_{\"ID\"}"; ]; 
 	
     rr:predicateObjectMap
     [ 
-      rr:predicate		rdfs:label ; 
-      rr:objectMap    [ 
-             rr:column "\"Name\""; 
-             rr:termType rr:Literal;
-      ];
+		rr:predicate	rdfs:label ; 
+		rr:objectMap	[ rr:column "\"Name\""; ];
     ];
 	.

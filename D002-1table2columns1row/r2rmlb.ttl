@@ -9,7 +9,7 @@
     
     rr:logicalTable [ rr:tableName "\"Student\""; ];
 
-    rr:subjectMap [ rr:template "Student{\"ID\"}" rr:termType rr:BlankNode;  ];
+    rr:subjectMap [ rr:template "students/{\"ID\"}" rr:termType rr:BlankNode;  ];
 
     rr:predicateObjectMap
     [ 

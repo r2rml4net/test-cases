@@ -22,7 +22,7 @@
     rr:predicateObjectMap
     [ 
       rr:predicate		ex:paid;
-      rr:objectMap		[ rr:column "\"PaidInAdvance\""; rr:datatype xsd:boolean ]
+      rr:objectMap		[ rr:column "\"PaidInAdvance\"";  ]
     ];
 
     .

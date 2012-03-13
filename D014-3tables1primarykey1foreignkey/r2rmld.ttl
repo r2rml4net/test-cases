@@ -3,134 +3,25 @@
 @prefix ex: <http://example.com/ns#> .
 @prefix emp: <http://example.com/emp#> .
 @prefix dept: <http://example.com/dept#> .
-@prefix likes: <http://example.com/likes#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
-<TriplesMap1>
-    a rr:TriplesMap;
+<TriplesMap4>
+	a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
-       Select ('Department' || "deptno") AS deptId
-            , "deptno"
-            , "dname"
-            , "loc"
-         from "DEPT"
-       """ ];
 
-    rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;
-                    rr:class ex:dept; 
-                    rr:graph	ex:DeptGraph ;
-                    rr:inverseExpression "{"deptno"} = substr({deptId},length('Department')+1)"];
+        SELECT *, (CASE "job"
+            WHEN 'CLERK' THEN 'general-office'
+            WHEN 'NIGHTGUARD' THEN 'security'
+            WHEN 'ENGINEER' THEN 'engineering'
+        END) ROLE FROM "EMP"
 
-    rr:predicateObjectMap
-    [ 
-      rr:predicate		dept:deptno ; 
-      rr:objectMap    [ rr:column "\"deptno\""; rr:datatype xsd:positiveInteger ]
+        """ ];
+    rr:subjectMap [
+        rr:template "http://data.example.com/employee/{\"empno\"}";
     ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		dept:name ; 
-      rr:objectMap    [ rr:column "\"dname\"" ]
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		dept:location ; 
-      rr:objectMap    [ rr:column "\"loc\"" ]
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		dept:COMPANY ; 
-      rr:object			"EXAMPLE Corporation" 
-    ]
-.
-
-
-<jobtypeObjectMap>
-    a rr:ObjectMap;
-    rr:template "http://example.com/emp/job/{\"job\"}"
-    .
-
-<emptypeObjectMap>
-    a rr:ObjectMap;
-    rr:template "http://example.com/emp/etype/{\"etype\"}"
-    .
-
-<TriplesMap2>
-    a rr:TriplesMap;
-
-    rr:logicalTable [ rr:tableName "\"EMP\"" ];
-
-    rr:subjectMap [ rr:template "http://example.com/emp/{\"empno\"}";
-                    rr:class ex:emp; 
-                    rr:graphMap [ rr:template "http://example.com/graph/{\"job\"}/{\"etype\"}"; ];
-                  ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		emp:jobtype ; 
-      rr:objectMap    <jobtypeObjectMap>
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		rdf:type ; 
-      rr:objectMap    <jobtypeObjectMap>
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		emp:emptype ; 
-      rr:objectMap    <emptypeObjectMap>
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		rdf:type ; 
-      rr:objectMap    <emptypeObjectMap>
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		emp:empno ; 
-      rr:objectMap    [ rr:column "\"empno\"" ]
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		emp:name ; 
-      rr:objectMap    [ rr:column "\"ename\"" ]; 
-      rr:graph			emp:empNameGraph ;
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		emp:job ; 
-      rr:objectMap    [ rr:column "\"job\"" ]
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		emp:deptNum ; 
-      rr:objectMap    [ rr:column "\"deptno\"" ]
-    ];
-
-    rr:predicateObjectMap 
-    [ 
-      rr:predicate		emp:etype ; 
-      rr:objectMap    [ rr:column "\"etype\"" ]
-    ];
-
     rr:predicateObjectMap [
-      rr:predicate		emp:c_ref_deptno ;
-      rr:objectMap    [
-        rr:parentTriplesMap <TriplesMap1>;
-        rr:joinCondition [
-          rr:child "\"deptno\"";
-          rr:parent "\"deptno\"";
-        ];
-      ];
-    ]
-    .
+        rr:predicate ex:role;
+        rr:objectMap [ rr:template "http://data.example.com/roles/{ROLE}" ];
+    ].
+    

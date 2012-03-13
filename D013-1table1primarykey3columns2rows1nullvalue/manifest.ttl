@@ -22,9 +22,9 @@
 .
 
 <tc0013a> a rdb2rdftest:R2RML ;	
-	dcterms:title "Duplicate tuples generate same blank node" ; 
+	dcterms:title "Generation of empty triples from referenced columns that have null values" ; 
 	dcterms:identifier "R2RMLTC0013a" ;
-	test:purpose "Tests the presence of null values in a template valued term map" ;
+	test:purpose "Tests the generation of empty triples from referenced columns that have null values" ;
 	test:specificationReference "#dfn-template-valued-term-map" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d013> ;

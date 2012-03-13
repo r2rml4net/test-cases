@@ -5,32 +5,16 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
 
-
 <TriplesMap1>
      a rr:TriplesMap;
 
 	rr:logicalTable [ rr:tableName "\"Student\"" ];
 
-    rr:subjectMap [ rr:template "http://example.com/Student{\"ID\"}{\"Name\"}"; 
-					rr:graph	ex:PersonGraph; 
-	];
+    rr:subjectMap [ rr:template "http://example.com/Student/{\"ID\"}/{\"Name\"}"; ];
 	
     rr:predicateObjectMap
     [ 
 		rr:predicate	rdf:type ;
 		rr:object		foaf:Person; 
 	];
-	
-    rr:predicateObjectMap
-    [ 
-		rr:predicate	ex:id ;
-		rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
-    ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicate		foaf:firstName ;
-      rr:objectMap		[ rr:column "\"Name\"" ]
-    ]
-
     .

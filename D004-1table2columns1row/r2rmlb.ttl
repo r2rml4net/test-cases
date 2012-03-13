@@ -14,7 +14,7 @@
        """;
 	   ] ;
 
-    rr:subjectMap [ rr:column "StudentId"; rr:termType rr:BlankNode;
+    rr:subjectMap [ rr:column "StudentId"; rr:termType rr:Literal;
                     rr:class ex:Student ];
 	
     rr:predicateObjectMap
@@ -23,23 +23,3 @@
       rr:objectMap		[ rr:column "\"Student\"" ]
     ]
     .
-
-<TriplesMap2>
-    a rr:TriplesMap;
-
-      rr:logicalTable [ rr:sqlQuery """
-       SELECT ('Sport' || "Sport") AS SportId,
-			"Sport"
-         FROM "Student_Sport"
-       """;
-	  ];
-
-    rr:subjectMap [ rr:column "SportId"; rr:termType rr:BlankNode;
-                    rr:class ex:Sport  ];
-	
-    rr:predicateObjectMap
-    [ 
-      rr:predicate		foaf:name ; 
-      rr:objectMap		[ rr:column "\"Sport\"" ]
-    ]
-	.

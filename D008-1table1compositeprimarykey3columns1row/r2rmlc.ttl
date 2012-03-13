@@ -11,32 +11,12 @@
 
 	rr:logicalTable [ rr:tableName "\"Student\"" ];
 
-    rr:subjectMap [ rr:template "http://example.com/Student{\"ID\"}{\"Name\"}"; 
-	];
+    rr:subjectMap [ rr:template "http://example.com/Student/{\"ID\"}/{\"Name\"}"; ];
 	
     rr:predicateObjectMap
     [ 
-		rr:predicate	rdf:type ;
-		rr:object		foaf:Person ; 
-	];
-	
-    rr:predicateObjectMap
-    [ 
-		rr:predicate	ex:id ;
-		rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
+		rr:predicate	foaf:name ;
+		rr:predicate	ex:name ;
+		rr:objectMap	[ rr:column "\"Name\"" ]
     ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicate		foaf:name ;
-      rr:predicate		ex:name ;
-      rr:objectMap    [ rr:column "\"Name\"" ]
-    ];
-
-    rr:predicateObjectMap
-    [ 
-      rr:predicate		ex:Sport ;
-      rr:objectMap    [ rr:column "\"Sport\"" ]
-    ]
-	
     .

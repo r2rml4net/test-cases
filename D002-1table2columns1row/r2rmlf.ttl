@@ -9,13 +9,13 @@
     
     rr:logicalTable [ rr:tableName "\"Student\"" ];
 
-    rr:subjectMap [ rr:template "http://example.com/{\"ID\"}{\"Name\"}";
+    rr:subjectMap [ rr:template "http://example.com/{ID}/{Name}";
                     rr:class foaf:Person ];
 
     rr:predicateObjectMap
     [ 
       rr:predicate		ex:id ; 
-      rr:objectMap		[ rr:column "\"ID\""; rr:datatype xsd:integer ]
+      rr:objectMap		[ rr:column "\"ID\"";  ]
     ];
 
     rr:predicateObjectMap

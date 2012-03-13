@@ -11,7 +11,7 @@
 
 	rr:logicalTable [ rr:tableName "\"Student\""; ];
 
-    rr:subjectMap [ rr:template "http://example.com/Student{\"ID\"}{\"Name\"}"; 
+    rr:subjectMap [ rr:template "http://example.com/Student/{\"ID\"}/{\"Name\"}"; 
 				    rr:graph ex:PersonGraph;
 	];
 	
@@ -20,16 +20,10 @@
 		rr:predicate	rdf:type;
 		rr:object		foaf:Person;
 	];
-	
-    rr:predicateObjectMap
-    [ 
-		rr:predicate	ex:id;
-		rr:objectMap    [ rr:column "\"ID\""; rr:datatype xsd:integer ]
-    ];
 
     rr:predicateObjectMap
     [ 
-      rr:predicate		foaf:firstName;
+      rr:predicate		foaf:name;
       rr:objectMap		[ rr:column "\"Name\"" ]
     ]
 
