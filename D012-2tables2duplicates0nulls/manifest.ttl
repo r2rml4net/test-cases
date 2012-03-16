@@ -19,7 +19,7 @@
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
 	rdb2rdftest:hasExpectedOutput true ;	
-	rdb2rdftest:output "directGraph.nt" ;
+	rdb2rdftest:output "directGraph.ttl" ;
 .
 <tc0012a> a rdb2rdftest:R2RML ;	
 	dcterms:title "Duplicate tuples generate same blank node" ; 
