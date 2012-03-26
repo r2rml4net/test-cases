@@ -22,9 +22,9 @@
 .
 
 <tc0005a> a rdb2rdftest:R2RML ;	
-	dcterms:title "generation of duplicate triples, typing of resources" ; 
+	dcterms:title "Typing of resources" ; 
 	dcterms:identifier "R2RMLTC0005a" ;
-	test:purpose "Tests the generation of duplicate triples and the typing of resources" ;
+	test:purpose "Tests the typing of resources" ;
 	test:specificationReference "#typing" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d005> ;
