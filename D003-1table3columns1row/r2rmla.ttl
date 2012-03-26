@@ -7,8 +7,6 @@
 <TriplesMap1>
      a rr:TriplesMap;
 
-     rr:logicalTable [ rr:tableName "\"Student\"" ];
-
 	rr:logicalTable [ 
 						rr:sqlQuery """
 							SELECT 	"ID",
