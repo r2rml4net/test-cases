@@ -18,7 +18,7 @@
        """ ];
 
     rr:subjectMap [ rr:column "deptId"; rr:termType rr:BlankNode;
-                    rr:inverseExpression "{"deptno"} = substr({deptId},length('Department')+1)"];
+                    rr:inverseExpression "{\"deptno\"} = substr({deptId},length('Department')+1)"];
 
     rr:predicateObjectMap
     [ 
@@ -120,6 +120,7 @@
     rr:predicateObjectMap [
       rr:predicate		emp:c_ref_deptno ;
       rr:objectMap    [
+      	a rr:RefObjectMap ;
         rr:parentTriplesMap <TriplesMap1>;
         rr:joinCondition [
           rr:child "\"deptno\"";
