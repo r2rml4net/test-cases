@@ -22,11 +22,12 @@
     [ 
       rr:predicate	<http://example.com/ontology/practises> ; 
       rr:objectMap	[ 
+           a rr:RefObjectMap ;
            rr:parentTriplesMap <TriplesMap2>;
            rr:joinCondition [
 				rr:child "\"Sport\"" ;
 				rr:parent "\"ID\"" ;
-			]
+		  ]
       ];
     ];
     .

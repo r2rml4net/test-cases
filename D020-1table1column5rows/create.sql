@@ -1,5 +1,5 @@
 CREATE TABLE "Student" (
-"Name" VARCHAR(50),
+"Name" VARCHAR(50)
 );
 
 INSERT INTO "Student" ("Name") VALUES ('http://company.com/Alice');
