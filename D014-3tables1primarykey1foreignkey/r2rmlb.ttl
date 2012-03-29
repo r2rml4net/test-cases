@@ -66,25 +66,25 @@
     rr:predicateObjectMap 
     [ 
       rr:predicate		emp:jobtype ; 
-      rr:objectMap    [ rr:column "jobTypeURI" rr:termType rr:IRI; ]
+      rr:objectMap    [ rr:column "jobTypeURI"; rr:termType rr:IRI; ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicate		rdf:type ; 
-      rr:objectMap    [ rr:column "jobTypeURI" rr:termType rr:IRI; ]
+      rr:objectMap    [ rr:column "jobTypeURI"; rr:termType rr:IRI; ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicate		emp:emptype ; 
-      rr:objectMap    [ rr:column "empTypeURI" rr:termType rr:IRI; ]
+      rr:objectMap    [ rr:column "empTypeURI"; rr:termType rr:IRI; ]
     ];
 
     rr:predicateObjectMap 
     [ 
       rr:predicate		rdf:type ; 
-      rr:objectMap    [ rr:column "empTypeURI" rr:termType rr:IRI; ]
+      rr:objectMap    [ rr:column "empTypeURI"; rr:termType rr:IRI; ]
     ];
 
     rr:predicateObjectMap 
