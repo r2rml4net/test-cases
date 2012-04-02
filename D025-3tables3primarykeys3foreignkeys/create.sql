@@ -41,7 +41,6 @@ INSERT INTO "People" ("ID", "fname", "addr", "deptName",   "deptCity" )
               
 CREATE TABLE "Projects" (
 	"lead" INT,
-	-- FOREIGN KEY ("lead") REFERENCES "People"("ID"),
 	"name" VARCHAR(50), 
 	UNIQUE ("lead", "name"), 
 	"deptName" VARCHAR(50), 
@@ -51,15 +50,17 @@ CREATE TABLE "Projects" (
 );
 CREATE TABLE "TaskAssignments" (
 	"worker" INT,
-	-- FOREIGN KEY ("worker") REFERENCES "People"("ID"),
 	"project" VARCHAR(50), 
 	PRIMARY KEY ("worker", "project"), 
 	"deptName" VARCHAR(50), 
 	"deptCity" VARCHAR(50),
-	FOREIGN KEY ("worker") REFERENCES "People"("ID"),
 	FOREIGN KEY ("project", "deptName", "deptCity") REFERENCES "Projects"("name", "deptName", "deptCity"),
 	FOREIGN KEY ("deptName", "deptCity") REFERENCES "Department"("name", "city")
 );
+
+ALTER TABLE "Projects" ADD FOREIGN KEY("lead") REFERENCES "People"("ID");
+ALTER TABLE "TaskAssignments" ADD FOREIGN KEY("worker") REFERENCES "People"("ID");
+
 INSERT INTO  "Projects" ("lead", "name",          "deptName",   "deptCity" )
                  VALUES (8,      'pencil survey', 'accounting', 'Cambridge');
 INSERT INTO  "Projects" ("lead", "name",          "deptName",   "deptCity" )
