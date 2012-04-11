@@ -1,5 +1,5 @@
 <http://example.com/Patient10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://example.com/Patient10> <http://example.com/weight> "80.25E0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://example.com/Patient10> <http://example.com/weight> "8.025E1"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://example.com/Patient10> <http://example.com/height> "1.65E0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://example.com/Patient11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://example.com/Patient11> <http://example.com/weight> "70.22E0"^^<http://www.w3.org/2001/XMLSchema#double> .
