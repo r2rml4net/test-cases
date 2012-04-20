@@ -1,3 +1,5 @@
+@base <http://example.com/base/> .
+
 <Country/Code-BO.Lan-EN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <Country> .
 <Country/Code-BO.Lan-EN> <Country#Code> "BO" .
 <Country/Code-BO.Lan-EN> <Country#Lan> "EN" .

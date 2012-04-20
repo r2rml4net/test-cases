@@ -15,6 +15,6 @@
     rr:predicateObjectMap
     [ 
       rr:predicateMap [ rr:constant ex:description ]; 
-      rr:objectMap    [ rr:constant "Bad Student" ]
+      rr:objectMap    [ rr:constant "Bad Student"; rr:termType rr:Literal; ]
     ]
     .
