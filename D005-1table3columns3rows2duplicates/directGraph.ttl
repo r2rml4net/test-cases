@@ -1,3 +1,5 @@
+@base <http://example.com/base/> .
+
 _:a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <IOUs> .
 _:a <IOUs#fname> "Bob" .
 _:a <IOUs#lname> "Smith" .
