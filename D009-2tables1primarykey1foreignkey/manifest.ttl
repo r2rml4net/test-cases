@@ -7,7 +7,7 @@
 	dcterms:title "Two tables, a primary key, a foreign key" ;
 	dcterms:identifier "D009-2tables1primarykey1foreignkey" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0009>, <tc0009a>, <tc0009b>, <tc0009c>, <tc0009d> ;
+	rdb2rdftest:relatedTestCase <dg0009>, <tc0009a>, <tc0009b>,  <tc0009d> ; #<tc0009c>,
 .
 
 <dg0009> a rdb2rdftest:DirectMapping ;	
@@ -45,17 +45,17 @@
 	rdb2rdftest:mappingDocument "r2rmlb.ttl" ;
 .
 
-<tc0009c> a rdb2rdftest:R2RML ;	
-	dcterms:title "Unamed column in a logical table" ; 
-	dcterms:identifier "R2RMLTC0009c" ;
-	test:purpose "Test a logical table with unamed column." ;
-	test:specificationReference "#dfn-sql-query" ;
-	test:reviewStatus test:unreviewed ;
-	rdb2rdftest:database <d009> ;
-	rdb2rdftest:hasExpectedOutput false ;
-	rdb2rdftest:failMessage "non-conforming R2RML mapping";		
-	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
-.
+#<tc0009c> a rdb2rdftest:R2RML ;	
+#	dcterms:title "Unamed column in a logical table" ; 
+#	dcterms:identifier "R2RMLTC0009c" ;
+#	test:purpose "Test a logical table with unamed column." ;
+#	test:specificationReference "#dfn-sql-query" ;
+#	test:reviewStatus test:unreviewed ;
+#	rdb2rdftest:database <d009> ;
+#	rdb2rdftest:hasExpectedOutput false ;
+#	rdb2rdftest:failMessage "non-conforming R2RML mapping";		
+#	rdb2rdftest:mappingDocument "r2rmlc.ttl" ;
+#.
 
 <tc0009d> a rdb2rdftest:R2RML ;	
 	dcterms:title "Named column in logical table" ; 
