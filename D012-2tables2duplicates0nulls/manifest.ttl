@@ -8,7 +8,7 @@
 	dcterms:title "Two tables, two duplicate records, zero nulls, no primary key" ;
 	dcterms:identifier "D012-2tables2duplicates0nulls" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0012>, <tc0012a>, <tc0012b>, <tc0012c>, <tc0012d> ;
+	rdb2rdftest:relatedTestCase <dg0012>, <tc0012a>, <tc0012b>, <tc0012c>, <tc0012d>, <tc0012e> ;
 .
 
 <dg0012> a rdb2rdftest:DirectMapping ;	
@@ -67,4 +67,16 @@
 	rdb2rdftest:hasExpectedOutput false ;
 	rdb2rdftest:failMessage "non-conforming R2RML mapping";		
 	rdb2rdftest:mappingDocument "r2rmld.ttl" ;
+.
+
+<tc0012e> a rdb2rdftest:R2RML ;	
+	dcterms:title "Default mapping" ; 
+	dcterms:identifier "R2RMLTC0012e" ;
+	test:purpose "Tests the generation of a default mapping for tables without a primary key." ;
+	test:specificationReference " #default-mappings" ;
+	test:reviewStatus test:unreviewed ;
+	rdb2rdftest:database <d012> ;
+	rdb2rdftest:hasExpectedOutput true ;
+	rdb2rdftest:output "mappedb.nq" ;	
+	rdb2rdftest:mappingDocument "r2rmle.ttl" ;
 .
