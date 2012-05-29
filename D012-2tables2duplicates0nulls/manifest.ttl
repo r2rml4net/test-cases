@@ -77,6 +77,6 @@
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
 	rdb2rdftest:hasExpectedOutput true ;
-	rdb2rdftest:output "mappedb.nq" ;	
+	rdb2rdftest:output "mappede.nq" ;	
 	rdb2rdftest:mappingDocument "r2rmle.ttl" ;
 .
