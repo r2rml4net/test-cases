@@ -48,4 +48,4 @@ _:d <Projects#ref-deptName;deptCity> <Department/ID=23> .
 <TaskAssignments/worker=7;project=pencil%20survey> <TaskAssignments#deptName> "accounting" .
 <TaskAssignments/worker=7;project=pencil%20survey> <TaskAssignments#deptCity> "Cambridge" .
 <TaskAssignments/worker=7;project=pencil%20survey> <TaskAssignments#ref-deptName;deptCity> <Department/ID=23> .
-<TaskAssignments/worker=7;project=pencil%20survey> <TaskAssignments#ref-project;deptName.deptCity> _:c .
+<TaskAssignments/worker=7;project=pencil%20survey> <TaskAssignments#ref-project;deptName;deptCity> _:c .
