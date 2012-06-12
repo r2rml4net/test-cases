@@ -14,7 +14,7 @@
     
     rr:predicateObjectMap [
     	rr:predicate rdf:type;
-    	rr:objectMap <IOUs>;
+    	rr:object <IOUs>;
     ];
 		
     rr:predicateObjectMap
@@ -45,7 +45,7 @@
     
     rr:predicateObjectMap [
     	rr:predicate rdf:type;
-    	rr:objectMap <Lives>;
+    	rr:object <Lives>;
     ];
 	
     rr:predicateObjectMap
