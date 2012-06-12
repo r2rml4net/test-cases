@@ -28,9 +28,7 @@
 <Source/ID=1101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <Source> .
 <Source/ID=1101> <Source#ID> 1101 .
 <Source/ID=1101> <Source#attrA> "K2A22" .
-<Source/ID=1101> <Source#ref-attrA;attrB> <Target/PK=1011> .
 
 <Source/ID=1102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <Source> .
 <Source/ID=1102> <Source#ID> 1102 .
-<Source/ID=1102> <Source#ref-attrA;attrB> <Target/PK=1012> .
 
