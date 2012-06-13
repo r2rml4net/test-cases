@@ -1,7 +1,7 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix dept: <http://example.com/dept#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@base <http://mappingpedia.org/rdb2rdf/r2rml/tc/> .
+@base <http://example.com/base/> .
 
 <TriplesMap1>
     a rr:TriplesMap;
