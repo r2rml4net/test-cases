@@ -58,7 +58,7 @@
 .
 
 <tc0007d> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping, specifying an rr:predicaObjectMap with rdf:type" ; 
+	dcterms:title "One column mapping, specifying an rr:predicateObjectMap with rdf:type" ; 
 	dcterms:identifier "R2RMLTC0007d" ;
 	test:purpose " Tests subjectmap with an alternative of having rr:class, i.e., by specifying an rr:predicateObjectMap with predicate rdf:type" ;
 	test:specificationReference "#typing" ;
@@ -82,7 +82,7 @@
 .
 
 <tc0007f> a rdb2rdftest:R2RML ;	
-	dcterms:title "One column mapping, using rr:graphMap and specifying an rr:predicaObjectMap with rdf:type" ; 
+	dcterms:title "One column mapping, using rr:graphMap and specifying an rr:predicateObjectMap with rdf:type" ; 
 	dcterms:identifier "R2RMLTC0007f" ;
 	test:purpose "Tests subjectmap with rr:graphMap and specifying an rr:predicateObjectMap with predicate rdf:type" ;
 	test:specificationReference "#named-graphs" ;
