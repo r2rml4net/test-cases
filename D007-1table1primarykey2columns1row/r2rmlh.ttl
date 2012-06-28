@@ -12,7 +12,7 @@
 	rr:logicalTable [ rr:tableName "\"Student\""; ];
 
     rr:subjectMap [ rr:template "http://example.com/Student/{\"ID\"}/{\"Name\"}"; 
-				    rr:graph rr:defaultGraph;
+				    rr:graphMap [ rr:column "\"Name\""; rr:termType rr:Literal; ]
 	];
 	
     rr:predicateObjectMap

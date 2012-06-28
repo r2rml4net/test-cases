@@ -7,7 +7,7 @@
 	dcterms:title "One table, one primary key, two columns, one row" ;
 	dcterms:identifier "D007-1table1primarykey2columns1row" ;
 	rdb2rdftest:sqlScriptFile "create.sql";
-	rdb2rdftest:relatedTestCase <dg0007>, <tc0007a>, <tc0007b>, <tc0007c>, <tc0007d>, <tc0007e>, <tc0007f>, <tc0007g>, <tc0007h>, <tc0007i> ;
+	rdb2rdftest:relatedTestCase <dg0007>, <tc0007a>, <tc0007b>, <tc0007c>, <tc0007d>, <tc0007e>, <tc0007f>, <tc0007g>, <tc0007h> ;
 .
 
 <dg0007> a rdb2rdftest:DirectMapping ;	
@@ -94,10 +94,10 @@
 .
 
 <tc0007g> a rdb2rdftest:R2RML ;	
-	dcterms:title "Empty R2RML mapping file that generates an empty output datasets" ; 
+	dcterms:title "Assigning triples to the default graph" ; 
 	dcterms:identifier "R2RMLTC0007g" ;
-	test:purpose "Tests an empty R2RML mapping file that generates an empty output dataset" ;
-	test:specificationReference "#generated-rdf" ;
+	test:purpose "Tests the generation of triples to the default graph" ;
+	test:specificationReference "#named-graphs" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d007> ;
 	rdb2rdftest:output "mappedg.nq" ;
@@ -106,25 +106,13 @@
 .
 
 <tc0007h> a rdb2rdftest:R2RML ;	
-	dcterms:title "Assigning triples to the default graph" ; 
-	dcterms:identifier "R2RMLTC0007h" ;
-	test:purpose "Tests the generation of triples to the default graph" ;
-	test:specificationReference "#named-graphs" ;
-	test:reviewStatus test:unreviewed ;
-	rdb2rdftest:database <d007> ;
-	rdb2rdftest:output "mappedh.nq" ;
-	rdb2rdftest:hasExpectedOutput true ;
-	rdb2rdftest:mappingDocument "r2rmlh.ttl" ;
-.
-
-<tc0007i> a rdb2rdftest:R2RML ;	
 	dcterms:title "Assigning triples to a non-IRI named graph" ; 
-	dcterms:identifier "R2RMLTC0007i" ;
+	dcterms:identifier "R2RMLTC0007h" ;
 	test:purpose "Tests the generation of triples to a non-IRI named graph, which is an error" ;
 	test:specificationReference "#named-graphs" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d007> ;
 	rdb2rdftest:failMessage "non-conforming R2RML mapping";
 	rdb2rdftest:hasExpectedOutput false ;
-	rdb2rdftest:mappingDocument "r2rmli.ttl" ;
+	rdb2rdftest:mappingDocument "r2rmlh.ttl" ;
 .
