@@ -11,7 +11,7 @@
 
 	rr:logicalTable [ rr:tableName "\"Person\"" ];
 
-    rr:subjectMap [ rr:template "http://example.com/Person/{\"ID\"}/{\"Name\"}-{\"DateOfBirth\"}";  ];
+    rr:subjectMap [ rr:template "http://example.com/Person/{\"ID\"}/{\"Name\"}/{\"DateOfBirth\"}";  ];
 	
     rr:predicateObjectMap
     [ 

@@ -10,7 +10,7 @@
 	a rr:TriplesMap;
     rr:logicalTable [ rr:sqlQuery """
 
-        SELECT *, (CASE "job"
+        SELECT "EMP".*, (CASE "job"
             WHEN 'CLERK' THEN 'general-office'
             WHEN 'NIGHTGUARD' THEN 'security'
             WHEN 'ENGINEER' THEN 'engineering'
