@@ -41,7 +41,7 @@
     rr:predicateObjectMap 
     [ 
       rr:predicate		dept:COMPANY ; 
-      rr:objectMap		[ rr:constant "EXAMPLE Corporation"; rr:termType rr:Literal; ]
+      rr:objectMap		[ rr:constant "EXAMPLE Corporation"; ]
     ]
 .
 

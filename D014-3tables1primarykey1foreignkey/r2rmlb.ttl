@@ -54,7 +54,7 @@
             , "ename"
             , ('http://example.com/emp/job/'|| "job") AS jobTypeURI
             , "job"
-            , deptno
+            , "deptno"
             , ('http://example.com/emp/etype/'|| "etype") AS empTypeURI
             , "etype"
             , ('http://example.com/graph/'|| "job" || '/' || "etype") AS graphURI

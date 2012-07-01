@@ -18,7 +18,7 @@
        AND "Sport"."ID" = "Student_Sport"."ID_Sport";
        """; ];
 
-    rr:subjectMap [ rr:template "http://example.com/{ID}/{FirstName}-{LastName}" ];
+    rr:subjectMap [ rr:template "http://example.com/{ID}/{FirstName};{LastName}" ];
 	
     rr:predicateObjectMap
     [ 
