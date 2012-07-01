@@ -73,7 +73,7 @@
 	dcterms:title "Default mapping" ; 
 	dcterms:identifier "R2RMLTC0012e" ;
 	test:purpose "Tests the generation of a default mapping for tables without a primary key." ;
-	test:specificationReference " #default-mappings" ;
+	test:specificationReference "#default-mappings" ;
 	test:reviewStatus test:unreviewed ;
 	rdb2rdftest:database <d012> ;
 	rdb2rdftest:hasExpectedOutput true ;
